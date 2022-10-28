@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html, body, .home, .form-sob{
+    width: 100%;
+}
+
+html{
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    user-select: none;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+}
+
+.home-initial, .home-form h2, .grid-container, .mosaico, .mosaico_1, .grid-container_2, .grid-container_3{
+    margin: 0 auto;
+}
+
+.home{
+    background: #ccc;
+    padding: 10px;
+}
+
+.logo-1, .logo-2{
+    margin: 10px 140px;
+    padding: 10px 2%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.logo-1{
+    width: 100px;
+    height: 70px;
+    float: left;
+    background-image: url('../img/logovillage.png');
+}
+
+.logo-2{
+    width: 150px;
+    height: 70px;
+    float: right;
+    background-image: url('../img/villa-house.png');
+}
+
+.home-initial{
+    width: 80%;
+    height: 500px;
+    background-image: url('../img/istockphoto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-form{
+    width: 30%;
+    min-width: 350px;
+    float: right;
+    margin: 20px;
+    height: 450px;
+    border-radius: 8px;
+    position: relative;
+    background: rgba(255,255,255,0.4);
+    box-shadow: 10px 10px 25px 5px;
+}
+
+.form-sob:hover, .home-form:hover .form-sob{
+    transition: 2s;
+    display: none;
+}
+
+.home-form h2{
+    padding: 10px 30px;
+    background: rgba(234,236,239,0.7);
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+.home-form form{
+    padding: 0 15px;
+}
+
+.home-form form p{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666464;
+}
+
+.home-form form input[type=text]{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+}
+
+.home-form form input[type=submit]{
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px 15px;
+    background-color: #39a1c7;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.form-sob{
+    height: 100%;
+    opacity: 0.95;
+    cursor: pointer;
+    top: 0;
+    position: absolute;
+}
+
+.grid-container{
+    width: 80%;
+    height: 230px;
+    background-color: rgb(223, 213, 213);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.grid-container h2{
+    font-weight: normal;
+    font-size: 2.2em;
+    margin: 10px;
+}
+
+.grid-paisagens{
+    width: 80%;
+    text-align: center;
+    display: inline;
+}
+
+.mosaico{
+    width: 80%;
+    height: 330px;
+    background-color: rgb(84, 198, 202)
+}
+
+.mosaico p{
+    width: 30%;
+    display: inline-block;
+    padding: 10px;
+    transform: translate(0,-300%);
+    color: white;
+}
+
+.mosaico img{
+    width: 65%;
+    height: 330px;
+    display: inline-block;
+    margin-right: -4.5%;
+    padding: 2px 0;
+}
+
+.mosaico_1{
+    width: 80%;
+    height: 330px;
+    background-color: rgb(102, 196, 224)
+}
+
+.mosaico_1 p{
+    width: 30%;
+    display: inline-block;
+    padding: 10px 20px;
+    transform: translate(0,-300%);
+}
+
+.mosaico_1 img{
+    width: 65%;
+    height: 330px;
+    display: inline-block;
+    margin-left: -4.5%;
+}
+
+.grid-container_2{
+    width: 80%;
+    height: 300px;
+    background-color: rgb(223, 213, 213);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.grid-container_2 h2{
+    font-weight: normal;
+    font-size: 1.4em;
+    margin: 30px 10px;
+    padding: 10px;
+}
+
+.grid-container_2 p{
+    padding: 10px;
+}
+
+.grid-container_3{
+    width: 80%;
+    height: 230px;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.grid-container_3 img{
+    width: 20%;
+    max-width: 100px;
+    margin: 10px;
+}
+
+footer{
+    height: 30px;
+    background-color: black;
+    text-align: right;
+    margin: 0;
+    padding: 35px 10px;
+    font-size: 1.4em;
+    display: block;
+    color: white;
+}
+
+@media screen and (max-width: 1008px){
+    .home-initial{
+        margin: 0 auto;
+    }
+    .home-form{
+        float: none;
+        margin: 0 auto;
+        top: 20px;
+        box-sizing: border-box;
+    }
+    
+}
+
+@media screen and (max-width: 880px){
+    .logo-1{
+        margin: 10px 0 10px 140px;
+    }
+    .logo-2{
+        margin: 10px 140px 10px 0;
+    }
+    
+    footer{
+        height: 90px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .mosaico, .mosaico_1{
+        height: 380px;
+        position: relative;
+    }
+    .mosaico p{
+        width: 100%;
+        display: inline-block;
+        transform: translate(0,0);
+        padding: 30px 0;
+        position: absolute;
+        bottom: 0;
+    }
+    .mosaico_1 p{
+        width: 100%;
+        display: inline-block;
+        transform: translate(0,-50%);
+        padding: 50px 0;
+    }
+    .mosaico img, .mosaico_1 img{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0 0 35px 0;
+    }
+    .grid-container_2{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 555px){
+    .form-sob{
+        display: none;
+    }
+    .logo-1, .logo-2{
+        float: none;
+        margin: 20px auto;
+        padding: 0;
+    }
+    footer{
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .home-initial{
+        width: 100%;
+        height: auto;
+        min-height: 540px;
+    }
+    .home-form{
+        width: 80%;
+        min-width: auto;
+        height: auto;
+    }
+    .grid-container{
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    footer{
+        height: 150px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 290px){
+    .home-form h2{
+        font-size: 1em;
+        text-align: center;
+    }
+    .grid-container_2 h2{
+        font-size: 1em;
+    }
+    footer{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Google Glass</title>
+        <link rel="stylesheet" href="_fonts/bubblegum-sans-regular.otf" />
+        <link rel="stylesheet" href="_fonts/computer-font.ttf" />
+        <link rel="stylesheet" href="_css/estilo.css" />
+        <link rel="icon" type="image/png" href="_imagens/glass-logo-med.jpg" />
+        <meta charset="UTF-8" />
+        <meta name="author" content="Junior Braga" />
+        <meta name="copyright" content="© 2022 ShiftF5" />
+        <meta name="description" content="Google Glass" />
+        <meta name="keywords" content="" />
+        <meta name="generator" content="VS Code" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Google Glass</h1>
+                <h3>A revolução do Google está chegando</h3>
+                <img src="_imagens/glass-logo-peq.jpg" />
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li onmousemove="mudaLogo(1)" onmouseout="voltarLogo(4)"><a title="Home" href="index.html" rel="prev">HOME</a></li>
+                        <li onmousemove="mudaLogo(2)" onmouseout="voltarLogo(4)"><a title="Especificações" href="specs.html" rel="next">ESPECIFICAÇÕES</a></li>
+                        <li onmousemove="mudaLogo(3)" onmouseout="voltarLogo(4)"><a title="Fotos" href="fotos.html" rel="next">FOTOS</a></li>
+                        <li onmousemove="mudaLogo(4)" onmouseout="voltarLogo(4)"><a title="Multimídia" href="">MULTIMÍDIA</a></li>
+                        <li onmousemove="mudaLogo(5)" onmouseout="voltarLogo(4)"><a title="Fale conosco" href="fale-conosco.html" rel="next">FALE CONOSCO</a></li>
+                    </ul>
+                </nav>
+                <img id="logo-menu" src="./_imagens/multimidia.png" />
+            </div>
+        </header>
+        <section>
+            <article class="secao-multi">
+                <div class="inicio">
+                    <h4>Glass > Multimídia</h4>
+                    <h2>Sons e videos</h2>
+                    <h4>por Junior Braga</h4>
+                    <p>Atualizado em 18/Set/2022</p>
+                </div>
+            </article>
+            <div class="audio-video">
+                <p>Áudio e Vídeo</p>
+                <div class="audio-video-integ">
+                    <iframe src="https://www.youtube.com/embed/4EvNxWhskf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--video controls="controls">
+                        <source src="_media/getting-started.mp4" type="video/mp4" />
+                    </video-->
+                    <audio controls="controls">
+                        <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mp3" />
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <p>Copyright © ShiftF5 sites 2022 - by Junior Braga</p>
+            <p>Facebook | Twitter</p>
+        </footer>
+    <script type="text/javascript" src="./_javascript/funcoes.js"></script>
+    </body>
+</html>
+

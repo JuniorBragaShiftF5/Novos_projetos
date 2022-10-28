@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Google Glass</title>
+        <link rel="stylesheet" href="_fonts/bubblegum-sans-regular.otf" />
+        <link rel="stylesheet" href="_fonts/computer-font.ttf" />
+        <link rel="stylesheet" href="_css/estilo.css" />
+        <link rel="icon" type="image/png" href="_imagens/glass-logo-med.jpg" />
+        <meta charset="UTF-8" />
+        <meta name="author" content="Junior Braga" />
+        <meta name="copyright" content="© 2022 ShiftF5" />
+        <meta name="description" content="Google Glass" />
+        <meta name="keywords" content="" />
+        <meta name="generator" content="VS Code" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Google Glass</h1>
+                <h3>A revolução do Google está chegando</h3>
+                <img src="_imagens/glass-logo-peq.jpg" />
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li onmousemove="mudaLogo(1)" onmouseout="voltarLogo(5)"><a title="Home" href="index.html" rel="prev">HOME</a></li>
+                        <li onmousemove="mudaLogo(2)" onmouseout="voltarLogo(5)"><a title="Especificações" href="specs.html" rel="next">ESPECIFICAÇÕES</a></li>
+                        <li onmousemove="mudaLogo(3)" onmouseout="voltarLogo(5)"><a title="Fotos" href="fotos.html" rel="next">FOTOS</a></li>
+                        <li onmousemove="mudaLogo(4)" onmouseout="voltarLogo(5)"><a title="Multimídia" href="multimidia.html" rel="next">MULTIMÍDIA</a></li>
+                        <li onmousemove="mudaLogo(5)" onmouseout="voltarLogo(5)"><a title="Fale conosco" href="">FALE CONOSCO</a></li>
+                    </ul>
+                </nav>
+                <img id="logo-menu" src="./_imagens/contato.png" />
+            </div>
+        </header>
+        <section>
+            <article class="secao-fale-conosco">
+                <div class="inicio">
+                    <h4>Fale Conosco > Contato</h4>
+                    <h2>Formulário de Contato</h2>
+                    <h4>por Junior Braga</h4>
+                    <p>Atualizado em 18/Set/2022</p>
+                </div>
+            </article>
+            <div class="formulario-cont">
+                <form method="post" id="Form-contato" action="mailto:j.junior.ce@hotmail.com" oninput="calcTotal()">
+                    <fieldset class="identificacao">
+                        <legend> Identificação do Usuário</legend>
+                        <h4><label for="cNome">Nome: </label>
+                            <input type="text" name="tNome" id="cNome" title="Nome" size="50" maxlength="50" placeholder="Nome completo" />
+                        </h4>
+                        <h4><label for="pSenha">Senha: </label>
+                            <input type="password" name="senha" id="pSenha" title="Senha" maxlength="8" placeholder="8 Dígitos" />
+                        </h4>
+                        <hr />
+                        <h4><label for="eEmail">E-mail: </label>
+                            <input type="email" name="email" id="eEmail" title="E-mail" placeholder="E-mail" />
+                        </h4>
+                            <fieldset class="sexo">
+                                <legend>Sexo</legend>
+                                <input type="radio" name="sexo" title="Masculino" checked="checked" value="sxoMasculino" id="sexo-m" />
+                                    <label for="sexo-m">Masculino</label>
+                                <input type="radio" name="sexo" title="Feminino" value="sexoFeminino" id="sexo-f" />
+                                    <label for="sexo-f">Feminino</label>
+                            </fieldset>
+                        <h4><label for="dNascimento">Data de Nascimento: </label>
+                            <input type="date" name="nascimento" id="dNascimento" title="Nascimento" />
+                        </h4>
+                    </fieldset>
+                    <fieldset class="endereco">
+                        <legend>Endereço do Usuário</legend>
+                        <h4><label for="pLogradouro">Logradouro: </label>
+                            <input type="public" name="logradouro" id="pLogradouro" title="logradouro" maxlength="50" placeholder="Rua, Avenida, Tv." />
+                        </h4>
+                        <div class="endereco-grup">
+                            <h4><label for="numeroCasa">Número: </label>
+                                <input type="number" name="numero" id="numeroCasa" title="Número" maxlength="5" placeholder="0" min="0" max="99999"/>
+                            </h4>
+                            <h4><label for="tEstado">Estado: </label>
+                                <select name="estado" id="tEstado" title="Estado"> 
+                                    <option value="estado">Selecione o Estado</option> 
+                                    <option value="ac">Acre</option> 
+                                    <option value="al">Alagoas</option> 
+                                    <option value="am">Amazonas</option> 
+                                    <option value="ap">Amapá</option> 
+                                    <option value="ba">Bahia</option> 
+                                    <option value="ce">Ceará</option> 
+                                    <option value="df">Distrito Federal</option> 
+                                    <option value="es">Espírito Santo</option> 
+                                    <option value="go">Goiás</option> 
+                                    <option value="ma">Maranhão</option> 
+                                    <option value="mt">Mato Grosso</option> 
+                                    <option value="ms">Mato Grosso do Sul</option> 
+                                    <option value="mg">Minas Gerais</option> 
+                                    <option value="pa">Pará</option>
+                                    <option value="pb">Paraíba</option> 
+                                    <option value="pr">Paraná</option> 
+                                    <option value="pe">Pernambuco</option> 
+                                    <option value="pi">Piauí</option> 
+                                    <option value="rj">Rio de Janeiro</option> 
+                                    <option value="rn">Rio Grande do Norte</option> 
+                                    <option value="ro">Rondônia</option> 
+                                    <option value="rs">Rio Grande do Sul</option> 
+                                    <option value="rr">Roraima</option> 
+                                    <option value="sc">Santa Catarina</option> 
+                                    <option value="se">Sergipe</option> 
+                                    <option value="sp">São Paulo</option> 
+                                    <option value="to">Tocantins</option> 
+                                </select>
+                            </h4>
+                        </div>
+                        <h4><label for="cid">Cidade: </label>
+                            <input type="city" name="tCidade" title="Cidade" id="cid" maxlength="30" placeholder="Qual sua Cidade" />
+                        </h4>
+                    </fieldset>
+                    <fieldset class="mensagem">
+                        <legend>Mensagem do Usuário</legend>
+                        <div>
+                            <h4>
+                                <label for="">Grau de Urgência: </label>
+                                Min <input type="range" name="tUrgencia" id="urgencia" min="0" max="10" /> Max
+                            </h4>
+                        </div>
+                        <br />
+                        <h4><label for="mensg">Mensagem: </label></h4>
+                        <textarea name="mensagem" id="mensg" title="Mensagem" placeholder="Mensagem"></textarea>
+                    </fieldset>
+                    <fieldset class="compra">
+                        <legend>Quero um Google Glass</legend>
+                        <input type="checkbox" id="compra" name="tCompra" title="comprar"/>
+                        <h4><label for="compra">Gostaria de adquirir um Google Glass quando disponível</label></h4>
+                        <h4><label for="cores">Cor </label>
+                            <input type="color" title="Cores" id="cores" value="#0000FF" />
+                        </h4>
+                        <h4><label for="numeroQuant">Quantidade: </label>
+                            <input type="number" title="Quantidade" id="numeroQuant" name="quant" maxlength="2" placeholder="0" min="0" max="10" />
+                        </h4>
+                        <h4><label for="valor">Preço Total: R$ </label>
+                            <input type="money" title="Valor Total" id="valor" maxlength="9" placeholder="total a pagar" readonly />
+                        </h4>
+                    </fieldset>
+                    <input type="submit" value="ENVIAR"/>
+                </form>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <p>Copyright © ShiftF5 sites 2022 - by Junior Braga</p>
+            <p>Facebook | Twitter</p>
+        </footer>
+    <script type="text/javascript" src="./_javascript/funcoes.js"></script>
+    </body>
+</html>

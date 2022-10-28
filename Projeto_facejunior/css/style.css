@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #3665af;
+}
+
+.initial{
+    width: 65%;
+    margin: 0 auto;
+    padding: 0 2%;
+    text-align: center;
+}
+
+.logo{
+    float: left;
+}
+
+.logo h2, form{
+    color: white;
+}
+
+.logo h2{
+    font-size: 2em;
+    padding: 15px;
+}
+
+.form-login{
+    float: right;
+    margin: 10px 0 0 0;
+}
+
+.form-login-1{
+    display: inline-block;
+}
+
+.form-login-1 p{
+    text-align: left;
+    font-size: 0.7em;
+    padding: 3px;
+}
+
+.initial a{
+    width: 50%;
+    margin: 0;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+    font-size: 0.7em;
+    display: inline-block;
+}
+
+.form-login-1 input{
+    margin-right: 6px;
+    padding: 0 5px;
+    display: inline-block;
+    outline: none;
+}
+
+.form-login input[type="submit"]{
+    margin: 0;
+    background-color: #2859a7;
+    color: white;
+    font-size: 0.7em;
+    padding: 3px;
+    cursor: pointer;
+    border: 0;
+}
+    input[type="submit"]:hover{
+        background-color: #598ad8;
+    }
+
+main{
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(white, #D3D8E8);
+}   
+
+.conection{
+    width: 65%;
+    margin: 20px auto;
+    padding: 0 2%;
+    text-align: justify;
+    display: block;
+}
+
+.conection-text{
+    width: 50%;
+    float: left;
+    padding: 0;
+}
+
+.conection-text h3{
+    width: 90%;
+    margin-top: 20px;
+    color: #0e192b;
+}
+
+.conection-text img{
+    width: 100%;
+    max-width: 400px;
+    z-index: -55;
+}
+
+.conection-conta{
+    width: 50%;
+    float: left;
+}
+
+.conection-conta h2{
+    margin: 10px 0;
+}
+
+.conection-conta h3{
+    margin: 20px 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+main .conection-conta input[type="text"], main .conection-conta input[type="date"]{
+    width: 48%;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    border: 0.5px solid #b5d0fa;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+main .conection-conta input[type="email"], main .conection-conta input[type="password"]{
+    width: 97%;
+    display: block;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    border: 0.5px solid #b5d0fa;
+    border-radius: 2px;
+    z-index: 6;
+}
+
+
+
+.form-date a{
+    width: 47%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    color:#2859a7;
+    font-size: 0.6em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.conection-conta input[type="radio"]{
+    margin: 0 10px;
+    padding: 10px;
+    
+}
+
+form label{
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.conection-conta-acert{
+    display: inline-block;
+}
+
+.conection-conta-acert p{
+    margin: 10px 0;
+    font-size: 0.8em;
+}
+
+.conection-conta-acert a{
+    display: inline;
+    font-size: 1em;
+    color: #365899;
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    max-width: 180px;
+    color: white;
+    background: linear-gradient(#67ae55, #578843);
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+
+.conection-conta-end{
+    margin: 10px 0;
+}
+
+.conection-conta-end a{
+    display: inline;
+    font-size: 1em;
+    color: #365899;
+    cursor: pointer;
+}
+
+section{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    margin: 50px auto;
+}
+
+.linguas, .links-uteis, section p{
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.linguas{
+    border-bottom: 1px solid #ccc;
+}
+
+.linguas a, .links-uteis a{
+    text-decoration: none;
+    padding: 30px 5px;
+    font-size: 0.6em;
+    color: #365899;
+}
+
+section .linguas-select, section p{
+    color: #737373;
+    font-size: 0.6em;
+    cursor: auto;
+}
+
+.linguas-mais{
+    display: inline;
+    
+}
+
+.linguas-mais a{
+    display: inline;
+    color: #737373;
+    border: 1px solid #737373;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0 5px;
+}
+
+    @media screen and (max-width: 1070px){
+        header{
+            height: auto;
+        }
+        .logo{
+            float: none;
+        }
+        .form-login{
+            float: none;
+            margin: 0 auto;
+        }
+        .form-login-1{
+            display: block;
+        }
+        .form-login-1 p{
+            text-align: center;
+        }
+        .initial a{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .form-login-1 input{
+            width: 100%;
+            max-width: 300px;
+        }
+        .form-login input[type="submit"]{
+            max-width: 150px;
+            margin-top: 10px;
+        }
+        main{
+            height: auto;
+        }
+        .conection-text{
+            display: none;
+        }
+        .conection-conta{
+            width: 90%;
+        }
+    }

@@ -1,0 +1,752 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atkinson', tahoma, verdana, arial;
+}
+
+.clear{
+    clear: both;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+}
+
+header > img{
+    margin: 5px 0 0 190px;
+    float: left;
+}
+
+menu{
+    float: right;
+    margin: 30px 30px 0 0;
+}
+
+header > menu > nav > ul > li{
+    display: inline;
+    margin: 0 30px;
+    font-size: 1.9em;
+}
+
+menu > nav > ul > li > a{
+     color: black;
+     text-decoration: none;
+}
+
+menu > nav > ul > li > a:hover{
+    color:#ccc;
+}
+
+.inicio{
+    width: 100%;
+    height: 450px;
+    background-image: url('../imgs/lawyer.jpg');
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+    .inicio h1{
+        font-size: 5.5rem;
+        color: white;
+        text-align: center;
+        padding-top: 130px;
+    }
+
+    .inicio p{
+        font-size: 1.8rem;
+        color: white;
+        text-align: center;
+        margin: 50px 0;
+    }
+
+.botton{
+    width: auto;
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 27px;
+    background-color: #651900;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    cursor: pointer;
+}
+
+    .botton img{
+        margin: 0 10px;
+    }
+
+    .botton > a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    .botton:hover{
+        background-color: #E6BA32;
+    }
+
+    .botton:hover a{
+        color:black;
+    }
+
+#sobre{
+    width: 98%;
+    margin: 100px 0;
+}
+
+    .sobre-nos{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 20px auto;
+        padding: 0 2%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 700px;
+    }
+
+    .sobre-nos h2{
+        font-size: 3.8rem;
+        margin: 50px auto;
+        padding: 20px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .sobre-nos-grid{
+        height: 100%;
+        background-color: rgba(255, 255, 220);
+        border-radius: 15px;
+        margin: 10px auto;
+        border: 3px solid #fff;
+        overflow: hidden;
+    }
+
+    .sobre-nos-grid img{
+        border-radius: 15px;
+    }
+
+    .sobre-nos-grid p{
+        margin: 20px;
+    }
+
+.servicos{
+ 
+    margin: 0 auto;
+    background-image: url('../imgs/servico.jpg');
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+    .servicos h2{
+        color: white;
+        padding: 50px 0 0 0;
+        font-size: 3.7rem;
+        text-align: center;
+    }
+
+    .servicos h3{
+        color: #ccc;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .servicos-grid{
+        margin: 0 auto;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 260px 280px;
+    }
+
+    .servicos-grid img{
+        
+        margin: 0 auto;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .servicos-grid h4{
+        color: white;
+        margin: 0 auto;
+        font-size: 1.8rem;
+    }
+
+    .servicos-grid details{
+        color: white;
+        position: absolute;
+    }
+
+    .servicos-grid P{
+        width: 90%;
+        max-width: 400px;
+        color: #ccc;
+        margin: 0 auto;
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .servicos-grid-serv{
+        margin: 10px;
+        padding: 20px 20px 50px 20px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .servicos-grid-serv-1{
+        margin: 10px;
+        padding: 20px 20px 50px 20px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .servicos-grid-serv-2{
+        margin: 10px;
+        padding: 20px 20px 50px 20px;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .servicos-grid-serv-3{
+        margin: 10px;
+        padding: 20px 20px 70px 20px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .servicos-grid-serv-4{
+        margin: 10px;
+        padding: 20px 20px 70px 20px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .servicos-grid-serv-5{
+        margin: 10px;
+        padding: 20px 20px 70px 20px;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+.temp-serv{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+    .temp-serv-tmp h3{
+        color: #8A501C;
+        font-size: 3.9rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .temp-serv-tmp p{
+        text-align: center;
+        color: #8A501C;
+        padding: 20px;
+    }
+
+    .temp-serv-calc{
+        width: 50%;
+        height: auto;
+        margin: 50px auto;
+    }
+
+.contato{
+    width: 100%;
+    padding: 0;
+    background-image: url('../imgs/lawyer.jpg');
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-size: cover;
+    display: inline-block;
+}
+
+    .contato h2{
+        font-size: 3rem;
+        margin: 30px;
+        color: white;
+    }
+
+    .contato-redes{
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 500px;
+        align-items: center;
+    }
+
+        .contato-redes-1{
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+    
+        .contato-redes-1 img{
+            margin: 10px 30px 10px 100px;
+            display: inline;
+        }
+
+        .contato-redes-1 h3{
+            color: white;
+            margin: 10px 30px 10px 0;
+            padding: 2PX 15px;
+            display: inline;
+            border-right: 3px solid;
+        }
+
+        .contato-redes-1 a{
+            color: #ccc;
+            display: block;
+            margin: 5px 10px 5px 250px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+    .contato-redes-2{
+            width: 100%;
+            margin: 0;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            display: inline-block;
+    }
+
+        .contato-input h3{
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .contato-input input{
+            width: 70%;
+            margin: 15px 30px;
+            padding: 15px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            display: inline-block;
+        }
+
+        .contato-input textarea{
+            width: 70%;
+            margin: 15px 30px;
+            padding: 15px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            display: inline-block;
+        }
+
+        .contato-input .submit{
+            max-width: 150px;
+            margin: 0 0 0 100px;
+            font-size: 1.5rem;
+            background-color: #651900;
+            transition: 1s;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            cursor: pointer;
+            color: #FFFFFF;
+            cursor: pointer;
+            border-radius: 50px;
+            border: 0;
+            display: block;
+        }
+
+            .submit:hover{
+                background-color: #a1811f;
+                color:black;
+            }
+
+.sect-map{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px;
+}
+
+    .sect-map > img{
+        padding: 0 20px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .localizacao{
+        margin: 50px 20px;
+        padding: 0;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        box-shadow: -25px 20px 20px rgba(10,10,10,0.8);
+    }
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    margin: 0;
+    padding: 35px 0;
+    font-size: 1.4rem;
+    display: inline-block;
+    
+}
+
+        @media screen and (max-width: 1280px){
+            header{
+                height: 100%;
+                margin: 0 auto;
+                text-align: center;
+                display: inline-block;
+            }
+            header > img{
+                float: none;
+                height: 100%;
+                margin: 0 auto;
+                padding: 0 auto;
+                text-align: center;
+                display: inline-block;
+            }
+            menu{
+                float: none;
+                margin: 30px;
+            }
+            menu a{
+                font-size: 1.8em;
+            }
+            .inicio{
+                height: auto;
+                padding: 50px 0;
+            }
+            #sobre{
+                height: 1000px;
+            }
+            .sobre-nos{
+                margin: 0 auto;
+                padding: 30px 2%;
+            }
+            .sobre-nos-grid{
+                height: 1000px;
+            }
+            .sobre-nos-grid h3, .sobre-nos-grid p{
+                font-size: 1.2em;
+            }
+            .servicos{
+                height: 800px;
+            }
+            .temp-serv-tmp p, summary, .contato-redes-1 p, .contato-redes-1 a{
+                font-size: 1.2em;
+            }
+            .temp-serv-calc{
+                width: 70%;
+            }
+            .contato{
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 1024px){
+            html{
+                overflow-x: hidden;
+                position: absolute;
+            }
+            .inicio h1{
+                padding-top: 0;
+            }
+            .inicio p{
+                margin: 40px 0;
+            }
+            #sobre{
+                margin: 50px 0 100px 0;
+                padding: 0;
+            }
+            .sobre-nos{
+                display: inline-block;
+                margin: 0 5px;
+                padding: 0 5px;
+            }
+            .sobre-nos h2{
+                margin: 0 auto;
+            }
+            .sobre-nos-grid{
+                width: calc(95%/3);
+                height: auto;
+                margin: 0 auto;
+                padding: 15px;
+                display: inline-block;
+            }
+            .sobre-nos-grid img{
+                width: 75%;
+            }
+            .servicos{
+                height: auto;
+                max-height: 920px;
+                padding: 30px;
+                margin: 30px 0;
+            }
+            .servicos-grid{
+                grid-template-rows: 300px 300px;
+            }
+            .servicos-grid P{
+                max-width: 300px;
+                font-size: 1.2em;
+            }
+            .contato{
+                height: 650px;
+                position: relative;
+            }
+            .sect-map{
+                height: auto;
+                max-height: 400px;
+                position: relative;
+            }
+            footer{
+                height: 60px;
+                position: absolute;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+             body{
+                overflow-x: hidden;
+                position: absolute;
+            }
+            #sobre{
+                width: 100%;
+                height: auto;
+                max-height: 2800px;
+                padding: 0;
+            }
+            .sobre-nos-grid{
+                width: 90%;
+            }
+            .botton a, .sobre-nos-grid p, .sobre-nos-grid h3{
+                font-size: 1.6em;
+            }
+            #sobre{
+                height: 350%;
+                max-height: 3300px;
+                padding: 0;
+            }
+            .servicos{
+                max-height: 1800px;
+            }
+            .servicos-grid{
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                grid-template-columns: repeat(2, 360px);
+                grid-template-rows: 280px 280px 360px;
+            }
+            .servicos-grid details{
+                width: 330px;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+                .servicos-grid-serv-2{
+                    grid-column-start: 1;
+                    grid-column-end: 1;
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+                .servicos-grid-serv-3{
+                    grid-column-start: 2;
+                    grid-column-end: 2;
+                    grid-row-start: 2;
+                    grid-row-end: 2;
+                }
+                .servicos-grid-serv-4{
+                    grid-column-start: 1;
+                    grid-column-end: 1;
+                    grid-row-start: 3;
+                    grid-row-end: 3;
+                }
+                .servicos-grid-serv-5{
+                    grid-column-start: 2;
+                    grid-column-end: 2;
+                    grid-row-start: 3;
+                    grid-row-end: 3;
+                }
+            .servicos-grid details{
+                text-align: left;
+            }
+            .servicos-grid P{
+                max-width: 200px;
+                text-align: center;
+            }
+            .sect-map{
+                width: 100%;
+                display: inline-block;
+            }
+            .sect-map img{
+                display: none;
+            }
+            iframe{
+                width: 100%;
+                position: relative;
+            }
+            footer{
+                height: 60px;
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+            }
+        }
+
+        @media screen and (max-width: 500px){
+            .menu > img{
+                width: 100%;
+                padding: 10px;
+            }
+            header > menu > nav > ul > li{
+                text-align: center;
+            }
+            .inicio{
+                height: auto;
+            }
+            .inicio h1{
+                font-size: 4rem;
+            }
+            .inicio p{
+                font-size: 1.4rem;
+                color: white;
+                text-align: center;
+                margin: 30px 0;
+            }
+            .sobre-nos h2{
+                font-size: 3rem;
+            }
+            #servicos{
+                max-height: 2150px;
+                margin: 0 auto;
+            }
+            .servicos h3{
+                font-size: 1.5em;
+                margin: 20px;
+            }
+            .servicos-grid{
+               width: 100%;
+               display: inline-block;
+            }
+            .servicos-grid-serv, .servicos-grid-serv-1, .servicos-grid-serv-2, .servicos-grid-serv-3, .servicos-grid-serv-4, .servicos-grid-serv-5{
+                height: 270px;
+            }
+            .servicos-grid P{
+                max-width: 400px;
+            }
+            .temp-serv-calc{
+                width: 90%;
+                margin: 20px auto;
+                padding: 0;
+                text-align: center;
+            }
+            .contato{
+                height: auto;
+                min-height: 630px;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                align-items: center;
+            }
+            .contato-redes{
+                width: 100%;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                align-items: center;
+                justify-content: center;
+            }
+            .contato-redes-1{
+                width: 100%;
+                display: inline-block;
+                margin: 20px auto;
+                padding: 0;
+                align-items: center;
+            }
+            .contato-redes-1 img{
+                width: 100%;
+                margin: 40px auto 10px auto;
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+            .contato-redes-1 h3{
+                width: 100%;
+                margin: 10px auto;
+                padding: 0;
+                border: none;
+                display: inline-block;
+                text-align: center;
+            }
+            .contato-redes-1 > a{
+                margin: 0;
+                display: block;
+                text-align: center;
+                bottom: 20px;
+            }
+            .contato-redes-2{
+                width: 100%;
+                margin: 30px auto;
+                text-align: center;
+                display: inline-block;
+            }
+            footer{
+                height: 150px;
+                text-align: center;
+            }
+        }

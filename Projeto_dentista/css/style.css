@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html, body, .home, main{
+    width: 100%;
+}
+
+html{
+    user-select: none;
+    scroll-behavior: smooth;
+    transition: 2s;
+    transition-delay: 2s;
+    transition-timing-function: 2s;
+}
+
+.home{
+    height: 120px;
+    text-align: center;
+}
+
+.menu{
+    width: 90%;
+    padding: 20px 2%;
+}
+
+.logo{
+    float: left;
+    margin-left: 150px;
+}
+
+.logo img{
+    width: 100%;
+    max-width: 200px;
+}
+
+.menu nav{
+    float: right;
+}
+
+.menu nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu nav ul li a{
+    font-size: 1em;
+    color: #b4b4b4;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.menu-mobile{
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    background-image: url('../img/png-clipart.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    transition: 1s;
+    display: none;
+}
+
+.mosaico{
+    width: 100%;
+    padding: 20px 2%;
+}
+
+.slid-mosaico{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.mosaico-slide{
+    width: calc(100% / 7);
+    max-width: 200px;
+    height: 200px;
+    max-height: 200px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mosaico-slide img{
+    width: 100%;
+}
+
+
+.servico{
+    width: 90%;
+    max-width: 850px;
+    display: flex;
+    margin: 0 auto;    
+    margin-top: -80px;
+    align-items: center;
+    text-align: center;
+}
+
+.servico h2{
+    font-size: 1em;
+    padding: 5px 0;
+}
+
+.servico p{
+    font-size: 0.8em;
+    padding: 5px 0;
+}
+
+.text-servico img{
+    max-width: 35px;
+    bottom: 0;
+    position: absolute;
+    margin: 5px auto 5px -10px;
+}
+
+.text-servico, .text-servico1{
+    width: 30%;
+    height: 100%;
+    min-height: 170px;
+    background-color: #576975;
+    padding: 30px 2%;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    position: relative;
+}
+
+.text-servico1{
+    width: 40%;
+    min-height: 190px;
+    background-color: #688293;
+    padding: 20px 2%;
+}
+
+.perfil{
+    width: 100%;
+    max-width: 900px;
+    margin: 100px auto;
+    text-align: center;
+    align-items: center;
+}
+
+.perfil-img{
+    width: 40%;
+    float: left;
+    padding: 20px 2%;
+}
+
+.perfil-img img{
+    width: 100%;
+}
+
+.perfil-text{
+    width: 60%;
+    padding: 20px 2%;
+    float: left;
+    color: #688293;
+}
+
+.perfil-text h2{
+    padding: 110px 0 30px 0;
+}
+
+.perfil-text p{
+    text-align: justify;
+    padding: 20px 2%;
+    line-height: 30px;
+}
+
+.videos{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
+    margin: 150px auto;
+    background-color: white;
+    position: relative;
+    color: #688293;
+}
+
+.videos h2{
+    padding: 40px;
+}
+
+.videos-container img{
+    width: 30%;
+    height: 150px;
+    position: absolute;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 3;
+}
+
+    .videos-container img:hover{
+        opacity: 0;
+        display: none;
+    }
+    .videos-container iframe:hover{
+        z-index: 50;
+        opacity: 1;
+    }
+    
+.videos-container iframe{
+    width: 30%;
+    margin: 0;
+    transition: 1s;
+    position: relative;
+    opacity: 0;
+}
+
+.tratamento, .depoimento-single{
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 2%;
+    color: #688293;
+}
+
+.tratamento > h2{
+    text-align: center;
+    padding-bottom: 100px;
+    text-transform: uppercase;
+}
+
+.tratamento-single{
+    width: 33.3%;
+    height: auto;
+    min-height: 330px;
+    float: left;
+    padding: 20px 2%;
+    text-align: justify;
+}
+
+.tratamento-single p{
+    padding-top: 20px;
+}
+
+.depoimento-single h2{
+    padding: 40px;
+}
+
+.depoimento-quote{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 2%;
+}
+
+quote{
+    width: 100%;
+    min-width: 500px;
+    font-size: 2em;
+    color: #b4b4b4;
+    
+}
+
+.depoimento-quote img{
+    width: 100%;
+    max-width: 65px;
+    margin: 0 auto;
+    display: block;
+}
+
+.img-depoimento img{
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    max-height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.chamada-instagram{
+    width: 100%;
+    height: 400px;
+    background-color: #8b9ca8;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.chamada-instagram img{
+    width: 100%;
+    max-width: 30px;
+    max-height: 40px;
+    margin: 30px 0 5px 0;
+}
+
+.instagram, .facebook{
+    width: 100%;
+    height: 130px;
+}
+
+.chamada-fotos{
+    width: 100%;
+    height: 140px;
+    background-color: aqua;
+}
+
+.chamada-fotos img{
+    width: calc(100%/9);
+    max-width: 200px;
+    height: 100%;
+    max-height: 140px;
+    margin: 0;
+    padding: 0;
+    border: 5px solid white;
+    float: left;
+}
+
+.facebook{
+    background-color: #576975;
+}
+
+.contato{
+    padding: 30px 0;
+    margin: 0 auto;
+    color: #688293;
+    background-color: #e7eef3;
+}
+
+.contato h2{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contato > form{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contato > form input, textarea{
+    width: 100%;
+    max-width: 500px;
+    height: 35px;
+    line-height: 35px;
+    border: 0;
+    margin: 10px auto;
+    border-radius: 2px;
+    padding-left: 12px;
+    outline: none;
+}
+
+.contato-form{
+    float: left;
+    padding: 5px;
+}
+
+.contato-form span{
+    text-align: right;
+    left: 1px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+textarea{
+    height: 180px;
+    resize: none;
+}
+
+form input[type=submit]{
+    cursor: pointer;
+    max-width: 130px;
+    height: 50px;
+    background-color: #576975;
+    color: white;
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 10px;
+    transition: 1s;
+}
+
+    form input[type=submit]:hover{
+        background-color: #778b99;
+        color: #41535f;
+    }
+
+footer{
+    width: 100%;
+    background-color: #688293;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.footer-contato{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 80px;
+    text-align: justify;
+}
+
+.footer-contato h2{
+    padding: 10px 0;
+}
+
+.footer-contato p{
+    font-size: 12px;
+}
+
+.footer-dev{
+    width: 100%;
+    height: 100px;
+    background-color: #142936;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-dev h2{
+    padding: 35px 2%;
+}
+
+@media screen and (max-width: 1170px){
+    .footer-dev{
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .chamada-fotos img:nth-of-type(1n+7){
+        display: none;
+    }
+    .chamada-fotos img{
+        width: calc(100%/6);
+    }
+    .footer-contato{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu nav ul{
+        width: 100%;
+        background-color: white;
+        top: 80px;
+        left: 0;
+        position: absolute;
+        transition: 1s;
+        display: none;
+        opacity: 0;
+    }
+    .menu nav ul li{
+        display: block;
+        padding: 20px;
+        transition: 1s;
+    }
+        .menu-mobile:hover ul{
+            display: block;
+            opacity: 1;
+        }
+        .menu nav ul li:hover{
+            background-color: #688293;
+        }
+
+    .servico{
+        flex-direction: column-reverse;
+    }
+    .text-servico, .text-servico1{
+        width: 70%;
+        height: 100%;
+        min-height: 100%;
+        padding: 30px 2%;
+    }
+    .text-servico1{
+        width: 80%;
+        min-height: auto;
+        padding: 20px 2%;
+    }
+    .perfil-img, .perfil-text{
+        width: 100%;
+        float: none;
+        padding: 20px 20%;
+    }
+    .perfil-text h2{
+        padding: 50px 0 30px 0;
+    }
+    .videos{
+        height: auto;
+        min-height: 780px;
+    }
+    .videos, .videos-container img, .videos-container iframe{
+        width: 90%;
+        height: 250px;
+        padding: 5px 0;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        right: 0;
+        left: 0;
+    }
+    .tratamento{
+        margin-top: 180px;
+    }
+    .tratamento-single{
+        width: 50%;
+        min-height: 230px;
+    }
+    .chamada-fotos img:nth-of-type(1n+4){
+        display: none;
+    }
+    .chamada-fotos img{
+        width: 33.3%;
+        max-width: 100%;
+    }
+    .footer-contato{
+        display: block;
+        text-align: center;
+        padding: 50px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logo{
+        float: none;
+        margin: 30px auto;
+    }
+    .menu-mobile{
+        margin-top: -140px;
+        margin-right: -10px;
+    }
+    .tratamento-single{
+        width: 90%;
+        height: auto;
+        min-height: auto;
+        float: none;
+        margin: 0 auto;
+    }
+    .w50{
+        width: 100%;
+    }
+    .footer-dev h2{
+        font-size: 1.2em;
+    }
+}

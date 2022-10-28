@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Google Glass</title>
+        <link rel="stylesheet" href="_css/estilo.css" />
+        <link rel="icon" type="image/png" href="_imagens/glass-logo-med.jpg" />
+        <meta charset="utf-8" />
+        <meta name="author" content="Junior Braga" />
+        <meta name="copyright" content="© 2022 ShiftF5" />
+        <meta name="description" content="Google Glass" />
+        <meta name="keywords" content="" />
+        <meta name="generator" content="VS Code" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Google Glass</h1>
+                <h3>A revolução do Google está chegando</h3>
+                <img src="_imagens/glass-logo-peq.jpg" />
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li onmousemove="mudaLogo(1)" onmouseout="mudaLogo(2)"><a title="Home" href="index.html" rel="prev">HOME</a></li>
+                        <li onmousemove="mudaLogo(2)" onmouseout="mudaLogo(2)"><a title="Especificações" href="">ESPECIFICAÇÕES</a></li>
+                        <li onmousemove="mudaLogo(3)" onmouseout="mudaLogo(2)"><a title="Fotos" href="fotos.html" rel="next">FOTOS</a></li>
+                        <li onmousemove="mudaLogo(4)" onmouseout="mudaLogo(2)"><a title="Multimídia" href="multimidia.html" rel="next">MULTIMÍDIA</a></li>
+                        <li onmousemove="mudaLogo(5)" onmouseout="mudaLogo(2)"><a title="Fale conosco" href="fale-conosco.html" rel="next">FALE CONOSCO</a></li>
+                    </ul>
+                </nav>
+                <img id="logo-menu" src="./_imagens/especificacoes-02.png" />
+            </div>
+        </header>
+        <section>
+            <article class="secao-specs">
+                <div class="inicio">
+                    <h4>Glass > Especificações</h4>
+                    <h2>Raio-X no Google Glass</h2>
+                    <h4>por Junior Braga</h4>
+                    <p>Atualizado em 18/Set/2022</p>
+                </div>
+                <div class="oque-specs">
+                    <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                </div>
+                <div class="specs-glass">
+                    <div class="specs-glass-clicks">
+                        <img usemap="#meumapa" src="_imagens/glass-esquema-marcado.jpg" />
+                        <map name="meumapa">
+                            <area shape="rect" coords="180,206,267,257" href="google-glass.html#tela" target="janela"/>
+                            <area shape="circle" coords="158,244,12" href="google-glass.html#camera" target="janela"/>
+                            <area shape="poly" coords="28,143,82,214,84,252,26,270" href="google-glass.html#sensores" target="janela"/>
+                            <area shape="circle" coords="76,53,12" href="google-glass.html#bateria" target="janela"/>
+                        </map>
+                    </div>
+                    <div id="specs-glass-inter">
+                        <iframe src="google-glass.html" name="janela" id="frame-specs"></iframe>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="clear"></div>
+    <footer>
+        <p>Copyright © ShiftF5 sites 2022 - by Junior Braga</p>
+        <p><a>Facebook</a> | <a>Twitter</a></p>
+    </footer>
+    </body>
+    <script type="text/javascript" src="./_javascript/funcoes.js"></script>
+</html>

@@ -1,0 +1,829 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    font-family: 'Atkinson';
+}
+
+.clear{
+    clear: both;
+}
+
+html{
+    width: 100%;
+    user-select: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    width: 99%;
+    height: 80px;
+}
+
+header > img{
+    margin: 5px 0 0 190px;
+    float: left;
+}
+
+menu{
+    float: right;
+    margin: 30px 30px 0 0;
+}
+
+header > menu > nav > ul > li{
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 1.9em;
+}
+
+menu > nav > ul > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+menu > nav > ul > li > a:hover{
+    color:#ccc;
+}
+
+.inicio{
+    width: 100%;
+    height: 500px;
+    background-image: url('../imgs/lawyer.jpg');
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.inicio h1{
+    font-size: 5.5rem;
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.inicio p{
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    margin: 90px 0;
+}
+
+.botton{
+    width: auto;
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 27px;
+    background-color: #651900;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    cursor: pointer;
+}
+
+    div .botton img{
+        margin: 0 10px;
+    }
+
+    .botton > a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    .botton:hover{
+        background-color: #E6BA32;
+    }
+
+    .botton:hover a{
+        color:black;
+    }
+
+.sobre{
+    width: 100%;
+    margin: 50px auto;
+}
+
+.sobre-nos{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: calc(100%/4);
+    grid-template-rows: 750px;
+}
+
+.sobre-nos h2{
+    font-size: 3.5em;
+    margin: 150px auto;
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.sobre-nos img{
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.sobre-nos p{
+    margin: 20px;
+}
+
+.sobre-nos-grid, .sobre-nos-grid-1, .sobre-nos-grid-2{
+    background-color: rgba(255, 255, 220, 0.5);
+    margin: 0;
+    border: 3px solid #fff;
+    border-radius: 15px;
+}
+
+.sobre-nos-grid{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.sobre-nos-grid-1{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.sobre-nos-grid-2{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.servicos{
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('../imgs/servico.jpg');
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.servicos h2{
+    color: white;
+    padding: 50px 0 0 0;
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+.servicos h3{
+    color: #ccc;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.servicos-grid{
+    margin: 20px auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 280px;
+}
+
+    .servicos-grid img{
+        margin: 0 auto;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .servicos-grid h4{
+        color: white;
+        margin: 0 auto;
+        font-size: 1.8rem;
+    }
+
+    .servicos-grid h5{
+        width: 70%;
+        color: #ccc;
+        margin: 0 auto;
+        font-size: 1rem;
+        display: none;
+    }
+
+    .servicos-grid details{
+        width: 30%;
+        color: white;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .servicos-grid P{
+        width: 90%;
+        max-width: 470px;
+        color: #ccc;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding-right: 20px;
+    }
+
+    .servicos-grid-serv, .servicos-grid-serv-1, .servicos-grid-serv-2{
+        margin: 10px;
+        padding: 20px;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .servicos-grid-serv-3, .servicos-grid-serv-4, .servicos-grid-serv-5{
+        margin: 10px;
+        padding: 20px;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .servicos-grid-serv, .servicos-grid-serv-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .servicos-grid-serv-1, .servicos-grid-serv-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .servicos-grid-serv-2, .servicos-grid-serv-5{
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+
+.temp-serv{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
+
+    .temp-serv-tmp h3{
+        color: #8A501C;
+        font-size: 3.9rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .temp-serv-tmp p{
+        text-align: center;
+        color: #8A501C;
+        padding: 20px;
+    }
+
+.contato{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    background-image: url('../imgs/lawyer.jpg');
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+    .contato h2{
+        font-size: 3rem;
+        margin: 30px;
+        color: white;
+    }
+
+    .contato-redes{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px;
+        align-items: center;
+    }
+
+        .contato-redes-1{
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: 1;
+        }
+        
+            .contato-redes-1 img{
+                margin: 10px 30px 10px 100px;
+                display: inline;
+            }
+            
+            .contato-redes-1 h3{
+                color: white;
+                margin: 10px 30px 10px 0;
+                padding: 2PX 15px;
+                display: inline;
+                border-right: 3px solid;
+            }
+            
+            .contato-redes-1 a{
+                color: #ccc;
+                display: block;
+                margin: 5px 10px 5px 250px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+        .contato-redes-2{
+            width: 100%;
+            margin: 0;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+            
+            .sect-map iframe{
+                width: 100%;
+                height: 400px;
+            }
+
+.contato-calc{
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px 800px 450px;
+}
+
+    .contato-calc-img{
+        width: 100%;
+        padding: 0;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .temp-serv-calc{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .temp-serv-calc h3{
+        width: 100%;
+        margin: 80px 0;
+        color: #651900;
+        padding: 0;
+        font-size: 1.8rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 80%;
+        height: 100%;
+        max-height: 700px;
+        margin: 30px auto;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        background-color: #ccc;
+        border-radius: 30px;
+        filter: drop-shadow(-50px 50px 20px black);
+    }
+
+    .card h3{
+        color: #8A501C;
+        font-size: 3.9rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+
+    .card-sub h4{
+        margin: 0 auto;
+        padding: 0;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #8A501C;
+    }
+
+    .card-sub img{
+        display: block;
+
+        margin: 0 auto 30px auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-sub a{
+        margin: 10px;
+        color: #8A501C;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        background: -webkit-linear-gradient(left, #0022F0 0%, #FF8000 100%);
+        background: linear-gradient(to right, #0022F0 0%, #FF8000 100%);
+        background-image: url('../imgs/source4.gif');
+        background-size: contain;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .notice-calc{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .notice-calc details{
+        width: 95%;
+        color: #651900;
+        font-size: 2rem;
+        margin: 100px 0 0 0;
+        cursor: pointer;
+    }
+    
+    .notice-calc script{
+        width: 40%;
+    }
+
+    .notice{
+        width: 70%;
+        height: 400px;
+        margin: 100px auto;
+        padding: 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .notice h3{
+        margin: 20px 0;
+        color: #651900;
+        padding: 0;
+        font-size: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .notice iframe{
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+        filter: drop-shadow(-50px 50px 20px black);
+    }
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    margin: 20px 0 0 0;
+    padding: 35px 0;
+    font-size: 1.4rem;
+    display: inline-block;
+    position: relative;
+}
+
+        @media screen and (max-width: 1198px){
+            .sobre-nos{
+                grid-template-columns: calc(100%/3);
+                grid-template-rows: 200px 780px;
+            }
+            .sobre-nos h2{
+                font-size: 3.8em;
+                margin: 20px auto;
+                padding: 0;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .sobre-nos-grid{
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            .sobre-nos-grid-1{
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            .sobre-nos-grid-2{
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            .sobre-nos p{
+                font-size: 1.2em;
+            }
+        }
+
+        @media screen and (max-width: 1065px){
+            .servicos{
+                height: 800px;
+            }
+        }
+
+        @media screen and (max-width: 1000px){
+            header{
+                width: 100%;
+                height: auto;
+                float: none;
+                text-align: center;
+            }
+            header > img{
+                width: 40%;
+                margin: 0 auto;
+                align-items: center;
+                display: inline-block;
+                float: none;
+            }
+            menu{
+                float: none;
+                margin: 0 auto;
+                
+            }
+        }
+
+        @media screen and (max-width: 1000px){
+            .contato{
+                padding: 0 auto;
+            }
+            .contato-redes{
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .contato-redes-1 img{
+                max-width: 40px;
+                margin: 50px auto 10px auto;
+                display: block;
+                text-align: center;
+            }
+            .contato-redes-1 a{
+                color: #ccc;
+                display: inline-block;
+                margin: 5px auto;
+                font-size: 1.2em;
+            }
+            .contato-redes-2{
+                margin-top: 90px;
+            }
+        }
+
+        @media screen and (max-width: 800px){
+            .sobre-nos{
+                grid-template-columns: 100%;
+                grid-template-rows: 200px 350px 400px 400px;
+            }
+            .sobre-nos h2, .sobre-nos-grid, .sobre-nos-grid-1, .sobre-nos-grid-2{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            .sobre-nos h2{
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .sobre-nos-grid{
+                text-align: center;
+                margin: 0 auto;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            .sobre-nos-grid-1{
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+            .sobre-nos-grid-2{
+                grid-row-start: 4;
+                grid-row-end: 4;
+            }
+            .sobre-nos-grid img, .sobre-nos-grid-2 img{
+                width: 35%;
+                float: left;
+                padding: 10px 1%;
+            }
+            .sobre-nos-grid-1 > img{
+                width: 35%;
+                padding: 10px 1%;
+            }
+            .sobre-nos-grid p, .sobre-nos-grid-2 p{
+                margin: 80px auto;
+            }
+            .sobre-nos-grid-1 p{
+                width: 65%;
+                float: left;
+                margin: 100px auto;
+                padding: 10px 1%;
+            }
+            .sobre-nos-grid-1 .botton{
+                float: left;
+                margin: 0 auto;
+                padding: 10px 1%;
+            }
+            .sobre-nos-grid-1 .botton a{
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 auto;
+            }
+            .servicos{
+                height: 880px;
+            }
+            footer{
+                height: auto;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 770px){
+            .servicos{
+                height: 1200px;
+            }
+            .servicos-grid{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 260px 280px 280px;
+            }
+            .servicos-grid-serv-2, .servicos-grid-serv-4{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            .servicos-grid-serv-2, .servicos-grid-serv-3{
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+            .servicos-grid-serv-3, .servicos-grid-serv-5{
+                grid-column-start: 2;
+                grid-column-end: 2;
+            }
+            .servicos-grid-serv-4, .servicos-grid-serv-5{
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+        }
+        
+        @media screen and (max-width: 700px){
+            .inicio h1{
+                font-size: 5rem;
+                padding-top: 30px;
+            }
+            .sobre-nos{
+                width: 90%;
+                display: block;
+                float: none;
+                box-sizing: border-box;
+            }
+            .sobre-nos h3{
+                font-size: 2em;
+            }
+            .sobre-nos-grid img, .sobre-nos-grid-1 img, .sobre-nos-grid-2 img{
+                float: none;
+            }
+            .sobre-nos-grid p, .sobre-nos-grid-1 p, .sobre-nos-grid-2 p{
+                width: 95%;
+                float: none;
+                margin: 30px auto;
+            }
+            .sobre-nos-grid-1 .botton{
+                float: none;
+                margin: 0 auto;
+                padding: 10px 1%;
+            }
+            .servicos{
+                height: auto;
+                text-align: center;
+            }
+            .servicos-grid{
+                display: inline-block;
+                text-align: center;
+            }
+            .servicos-grid img{
+                max-width: 110px;
+                margin: 50px 0 10px 0;
+            }
+            .servicos-grid details{
+                width: 70%;
+            }
+            .servicos-grid P{
+                width: 100%;
+                max-width: 670px;
+                font-size: 1.1em;
+            }
+            .contato-calc{
+                display: inline-block;
+            }
+            .contato-calc-img{
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+            .inicio p{
+                font-size: 1.7rem;
+                margin: 30px 0;
+            }
+        }
+
+        @media screen and (max-width: 460px){
+            .servicos{
+                min-height: 2100px;
+            }
+            .temp-serv{
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            .servicos{
+                height: 100%;
+                min-height: 2300px;
+            }
+            .sobre-nos h2{
+                font-size: 3em;
+            }
+            .temp-serv-tmp h3{
+                font-size: 3em;
+            }
+        }
+
+        @media screen and (max-width: 340px){
+            .inicio h1{
+                font-size: 4.5em;
+            }
+            .servicos{
+                min-height: 2500px;
+            }
+            .card h3{
+                font-size: 3em;
+            }
+        }
+
+        @media screen and (max-width: 290px){
+            .inicio h1{
+                font-size: 3.5em;
+            }
+            .sobre-nos h2{
+                font-size: 2em;
+            }
+            .servicos{
+                margin: 0 auto;
+                padding: 0 auto;
+            }
+            .contato h2{
+                font-size: 2em;
+                margin: 0 auto;
+            }
+            .temp-serv-tmp h3{
+                font-size: 2em;
+            }
+            .card{
+                height: 1300px;
+            }
+            .card-sub img{
+                width: 40%;
+                min-width: none;
+            }
+            .card-sub a{
+                width: 100%;
+                margin: 0;
+            }
+        }

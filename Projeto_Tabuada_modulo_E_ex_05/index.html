@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Excercício 5 - modulo E</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+    <header class="tab">
+        <h1>Tabuada</h1>
+    </header>
+    <section class="tabuada">
+        <div class="gerar">
+            <p>Número: <input type="number" name="numero" value="Number" id="numero"/>
+                <input type="button" name="gerartabuada" value="Gerar Tabuada" onclick="gerarTab()" />
+            </p>
+            <p>Tipo de tabuada:</p>
+            <p><input type="radio" name="tipoTab" value="adicao" checked="checked">Adição    <input type="radio" name="tipoTab" value="diminuicao">Diminução      <input type="radio" name="tipoTab" value="multiplicacao">Multiplicação      <input type="radio" name="tipoTab" value="divisao">Divisão</p>
+        </div>
+        <div class="area">
+            <h3 class="areaH3">Gerando tabuada...</h3>
+            <div id="gerTb"></div>
+        </div>
+    </section>
+    <footer>
+        ©ShiftF5 sites.
+    </footer>
+    <script type="text/javascript" src="java.js"></script>
+</body>
+</html>

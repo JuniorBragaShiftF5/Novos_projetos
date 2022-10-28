@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgba(59, 20, 230, 0.836);
+}
+
+.tab, footer{
+    text-align: center;
+    color: rgb(223, 219, 219);
+    font-size: 1.8em;
+    margin: 10px auto 5px auto;
+}
+
+.tabuada{
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color:rgb(238, 238, 220);
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+p{
+    font-size: 1.2em;
+    padding: 10px 15px;
+}
+
+input{
+    max-width: 100%;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.area{
+    text-align: center;
+    margin: 10px auto;
+    outline: none;
+}
+
+#gerTb{
+    width: auto;
+    max-width: 220px;
+    border-radius: 25px;
+    margin: 10px auto;
+    padding: 5px 20px;
+    text-align: left;
+    background-color: rgb(250, 250, 250);
+    display: none;
+}

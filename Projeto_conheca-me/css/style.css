@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    color: rgb(248, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('../img/paisagem-tarde.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.infor{
+    width: 60%;
+    height: 950px;
+    background-color: rgba(80, 80, 80, 0.5);
+    border-radius: 20px;
+    background-size: 100% 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 4.5em;
+    padding-top: 15px;
+}
+
+h2{
+    margin-top: 40px;
+    font-size: 2em;
+}
+
+h4{
+    padding: 10px 0 0 30px;
+    font-size: 1.8em;
+}
+
+img{
+    margin-top: 15px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+p{
+    margin:  10px 70px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+abbr{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contato{
+    width: 70%;
+    margin: 20px auto;
+    padding-left: 60px;
+}
+
+nav{
+    text-align: left;
+    margin-left: 50px;
+}
+
+a{
+    width: 100%;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(214, 212, 212, 0.438);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+a:hover{
+    padding: 10px 20px;
+    background-color: rgba(94, 93, 93, 0.589);
+    color: white;
+}
+
+footer{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2em;
+}

@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif, tahoma;
+}
+
+.clear{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html, body, .inicio, .inicio video, .servicos-cont-grid, .item-2-logo h4, .serv-mosaico, .serv-mosaico h4, .serv-mosaico-item, .serv-mosaico-item img, .serv-mosaico-item-1, .serv-mosaico-item-2, .serv-mosaico-item-3, .works-function, .works-function-on, .depoint, .depoint img, .depoint-mosaico, .contat, footer{
+    width: 100%;
+}
+
+html, body, #home{
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+    overflow-x: hidden;
+    color: #37000A;
+}
+
+html, .octa:hover, .menu-home > menu > nav > ul > li:hover a, div.botton:hover, div.botton:hover a{
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+}
+
+#home, .menu-home img, .botton, .botton a, .servicos, .servicos h2, .servicos p, .servicos-cont, .grid-logos, .item-2-logo p, .serv-mosaico, .serv-mosaico h3, .serv-mosaico h4, .serv-mosaico-item img, .serv-mosaico-item-1, .serv-mosaico-item-2, .serv-mosaico-item-3, .works, .works-function, .works-function-on, .works-function-on details, .depoint h3, .depoint-mosaico, .depoint-01, .depoint-02, .depoint-03, .contat, .contat-cont{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.octa, .inicio h1, .botton a, .depoint, footer{
+    color: white;
+}
+
+    .octa:hover, .menu-home > menu > nav > ul > li:hover a, div.botton:hover a{
+        color: #0022f0;
+    }
+
+.inicio p, .depoint h5, .depoint p, .contat-cont .botton:hover a{
+    color: #ccc;
+}
+
+.inicio, .inicio h1, .inicio p, .serv-mosaico-item{
+    position: relative;
+}
+
+.inicio video, .serv-mosaico-item details, footer{
+    position: absolute;
+}
+
+.menu-home, .octa, .menu-home > menu > nav > ul > li{
+    display: inline-block;
+}
+
+.servicos-cont-grid, .serv-mosaico-item, .depoint-mosaico{
+    display: grid;
+    grid-template-columns: calc(100%/3);
+}
+
+#home{
+    height: 120px;
+}
+
+.menu-home{
+    width: 80%;
+    height: 100px;
+    text-align: left;
+    margin: 20px auto;
+    padding: 10px 2%;
+}
+
+.menu-home img{
+    float: left;
+}
+
+.octa{
+    width: 15%;
+    height: 50px;
+    margin: 20px 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.menu-home menu{
+    width: 60%;
+    height: 40px;
+    float: right;
+    margin: -60px 30px 0 0;
+    text-align: right;
+}
+
+.menu-home > menu > nav > ul > li{
+    margin: 0 30px;
+    font-size: 1.9em;
+}
+
+.menu-home > menu > nav > ul > li > a{
+    color: rgb(22, 4, 100);
+}
+
+.inicio{
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(0, 34, 240, 0.5);
+}
+
+.inicio h1{
+    width: 50%;
+    text-align: justify;
+    font-size: 5em;
+    z-index: 10;
+    padding: 50px;
+}
+
+.inicio p{
+    width: 50%;
+    text-align: justify;
+    font-size: 1.4em;
+    margin-top: 40px;
+    margin-left: 100px;
+    padding: 0 2%;
+}
+
+.inicio video{
+    opacity: 0.5;
+    z-index: -999;
+}
+
+.botton{
+    width: 30%;
+    max-width: 140px;
+    height: auto;
+    background-color: #ff6005;
+    border-radius: 3px;
+    z-index: 120;
+    padding: 12px;
+    cursor: pointer;
+}
+
+    div.botton:hover{
+        background-color: white;
+    }
+
+    .servicos{
+        width: 70%;
+        height: auto;
+    }
+
+    .servicos h2{
+        margin: 15% 5% 2% 5%;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+   
+    .servicos p{
+        width: 80%;
+        font-weight: none;
+    }
+
+    .servicos-cont{
+        color:#ff6005;
+        font-size: 2.5em;
+        margin-top: 10%;
+        padding: 0 2%;
+    }
+
+.servicos-cont-grid{
+    margin: 50px auto;
+    grid-template-rows: 150px 500px auto auto auto auto;
+}
+
+.servicos-cont-grid-00, .servicos-cont-grid-01, .servicos-cont-grid-02, .servicos-cont-grid-03, .servicos-cont-grid-04, .servicos-cont-grid-05, .servicos-cont-grid-06, .servicos-cont-grid-07, .servicos-cont-grid-08, .servicos-cont-grid-09, .servicos-cont-grid-10, .servicos-cont-grid-11{
+    padding: 30px;
+}
+
+.servicos-cont-grid-00, .servicos-cont-grid video, .servicos-cont-grid-04, .servicos-cont-grid-06, .servicos-cont-grid-08, .servicos-cont-grid-10{
+    font-size: 2em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.servicos-cont-grid-01, .servicos-cont-grid-05, .servicos-cont-grid-07, .servicos-cont-grid-09, .servicos-cont-grid-11{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.servicos-cont-grid-00{
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.servicos-cont-grid-01 p{
+    margin: 50px 10px;
+}
+
+.servicos-cont-grid video{
+    width: 75%;
+    margin: 0 2%;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.servicos-cont-grid-04, .servicos-cont-grid-05{
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.servicos-cont-grid-06, .servicos-cont-grid-07{
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.servicos-cont-grid-08, .servicos-cont-grid-09{
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+.servicos-cont-grid-10, .servicos-cont-grid-11{
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+.grid-logos{
+    width: 80%;
+    height: auto;
+    margin: 250px auto;
+}
+
+.grid-logos h3{
+    font-size: 2em;
+    margin: 5%;
+}
+
+.logos-mosaico{
+    display: flex;
+    margin: 10% auto;
+}
+
+.item-1-logo{
+    width: 700px;
+    height: 200px;
+    border-radius: 5px 255px;
+}
+
+.item-2-logo{
+    width: 40%;
+    margin: 40px auto
+}
+
+.item-2-logo h4{
+    font-size: 1.5em;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, #0022F0 0%, #FF8000 100%);
+    background: linear-gradient(to right, #0022F0 0%, #FF8000 100%);
+    background-image: url('../imgs/source4.gif');
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.item-2-logo p{
+    font-size: 1em;
+}
+
+.serv-mosaico{
+    padding: 20px 2%;
+}
+
+.serv-mosaico h3{
+    font-size: 2.5em;
+    padding: 0 auto;
+}
+
+.serv-mosaico h4{
+    font-size: 2em;
+    margin: 30px auto;
+}
+
+.serv-mosaico-item{
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-template-rows: 450px;
+}
+
+.serv-mosaico-item img{
+    max-width: 140px;
+}
+
+.serv-mosaico-item h4{
+    font-size: 1.5em;
+}
+
+.serv-mosaico-item details{
+    width: 30%;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.serv-mosaico-item-1, .serv-mosaico-item-2, .serv-mosaico-item-3{
+    padding: 20px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.serv-mosaico-item-1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.serv-mosaico-item-2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.serv-mosaico-item-3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.works{
+    height: auto;
+    padding: 20px;
+}
+
+.works img{
+    width: calc(100%/3);
+    margin-top: 150px;
+    padding: 20px;
+    float: left;
+}
+
+.works-function{
+    height: auto;
+    margin: 200px auto;
+}
+
+.works-function h3, .works-function-on h3{
+    margin-bottom: 100px;
+}
+
+.works-function h4, .works-function-on h4{
+    margin: 20px auto;
+    color: black;
+}
+
+.works-function-on{
+    height: auto;
+    margin: 60px auto;
+}
+
+.works-function-on details{
+    width: 100%;
+    padding: 5px 2%;
+}
+
+.depoint{
+    background-image: url('../imgs/depoint.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.depoint h3{
+    padding: 30px;
+    font-size: 2.8em;
+}
+
+.depoint-mosaico{
+    grid-template-rows: 600px;
+    padding: 30px;
+}
+
+.depoint-01, .depoint-02, .depoint-03{
+    width: 70%;
+    padding: 30px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.depoint-01{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.depoint-02{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.depoint-03{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.depoint h4{
+    background-color: rgba(0, 34, 240, 0.7);
+    color: aliceblue;
+    border-radius: 80px;
+    padding: 20px;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.depoint h5{
+    font-size: 1.3em;
+}
+
+.depoint p{
+    font-size: 1em;
+}
+
+.depoint img{
+    max-width: 60px;
+    border-radius: 50px;
+    margin: 40px;
+}
+
+.contat{
+    height: 650px;
+    padding: 150px 0;
+    background-image: url('../imgs/contat.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contat-cont{
+    width: 90%;
+    height: auto;
+}
+
+.contat-cont h3{
+    width: 90%;
+    font-size: 6em;
+    margin: 0 auto 40px auto;
+}
+
+.contat-cont p{
+    margin: 20px;
+}
+
+.contat-cont .botton:hover{
+    background-color: #34af23;
+}
+
+footer{
+    height: 60px;
+    padding: 30px;
+    background-color: rgba(0, 0, 51, 0.9);
+    text-align: right;
+}
+
+    @media screen and (max-width: 1330px){
+        #home{
+            height: 250px;
+        }
+        .menu-home{
+            width: 100%;
+            display: inline;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 2%;
+        }
+        .menu-home img{
+            width: 30%;
+            max-width: 60px;
+            float: none;
+            margin: 20px auto;
+        }
+        .octa{
+            margin: 30px auto;
+            display: inline;
+        }
+        .menu-home menu{
+            width: 100%;
+            float: none;
+            margin: 20px auto;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+        .inicio h1, .inicio p{
+            width: 100%;
+        }
+        .inicio p{
+            margin-left: 0;
+        }
+        .depoint{
+            height: auto;
+        }
+        .depoint-mosaico{
+            grid-template-columns: calc(100%/2);
+            grid-template-rows: 600px 600px;
+            padding: 30px;
+        }
+        .depoint-01, .depoint-02{
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        .depoint-03{
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    @media screen and (max-width: 890px){
+        .inicio h1, .inicio p{
+            text-align: center;
+        }
+        .servicos-cont-grid{
+            grid-template-rows: 280px 500px auto auto auto auto;
+        }
+        .serv-mosaico-item details{
+            text-align: center;
+        }
+        .contat-cont h3{
+            width: 100%;
+            font-size: 4em;
+            padding: 0 2%;
+        }
+    }
+
+    @media screen and (max-width: 890px){
+        .inicio h1{
+            font-size: 3em;
+        }
+        .servicos-cont{
+            font-size: 1.6em;
+        }
+        .works img{
+            width: calc(100%/2);
+        }
+        .depoint-01, .depoint-02, .depoint-03{
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 740px){
+        .inicio h1{
+            font-size: 2em;
+            margin-top: 250px;
+        }
+        .inicio p{
+            font-size: 1em;
+        }
+        .servicos-cont{
+            font-size: 1em;
+        }
+        .servicos-cont-grid{
+            padding: 0 2%;
+            display: inline-block;
+        }
+        .servicos-cont-grid p{
+            text-align: justify;
+        }
+        .servicos-cont-grid video{
+            width: 90%;
+            padding: 0 2%;
+            text-align: center;
+        }
+        .grid-logos h3{
+            font-size: 1.8em;
+        }
+        .logos-mosaico{
+            width: 100%;
+            display: inline-block;
+            margin: 10% auto;
+        }
+        .item-1-logo{
+            width: 100%;
+            padding: 0 2%;
+            border-radius: 5px 100px;
+        }
+        .item-2-logo{
+            width: 100%;
+        }
+        .serv-mosaico-item{
+            height: auto;
+            display: inline-block;
+        }
+        .serv-mosaico-item details{
+            width: 90%;
+            text-align: left;
+            padding: 0 2%;
+        }
+        .serv-mosaico-item-1, .serv-mosaico-item-2, .serv-mosaico-item-3{
+            height: 350px;
+        }
+        .works img{
+            width: 100%;
+        }
+        .depoint-mosaico{
+            width: 100%;
+            display: inline-block;
+        }
+        footer{
+            height: 100px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        #home{
+            height: 290px;
+        }
+        .servicos h2{
+            width: 100%;
+            font-size: 2em;
+            margin: 15% 5%;
+        }
+        .servicos p{
+            width: 100%;
+        }
+        .servicos-cont-grid-00, .servicos-cont-grid video, .servicos-cont-grid-04, .servicos-cont-grid-06, .servicos-cont-grid-08, .servicos-cont-grid-10, .grid-logos h3{
+            font-size: 1.5em;
+        }
+        .contat-cont h3{
+            font-size: 3em;
+        }
+        .depoint h3{
+            padding: 0 2%;
+            font-size: 2em;
+        }
+    }
+
+    @media screen and (max-width: 350px){
+        .inicio p, .serv-mosaico-item p{
+            font-size: 0.8em;
+        }
+        .servicos h2, .works h3{
+            margin: 20px auto;
+            padding: 0;
+            font-size: 1.6em;
+        }
+        .servicos-cont-grid-00, .servicos-cont-grid video, .servicos-cont-grid-04, .servicos-cont-grid-06, .servicos-cont-grid-08, .servicos-cont-grid-10, .grid-logos h3{
+            font-size: 1.3em;
+        }
+        .serv-mosaico h3{
+            font-size: 2em;
+        }
+        .serv-mosaico-item p{
+            width: 80%;
+        }
+        .works-function-on h3, .works-function-on h4{
+            font-size: 1.5em;
+        }
+        .works-function h4{
+            font-size: 1.2em;
+        }
+        .depoint, .depoint-mosaico, .depoint-01, .depoint-02, .depoint-03{
+            width: 100%;
+            margin: 0;
+            padding: 20px 0;
+            display: inline-block;
+            text-align: center;
+        }
+        .depoint h3{
+            font-size: 1.5em;
+        }
+        .depoint h4{
+            width: 100%;
+            min-width: 150px;
+            border-radius: 40px;
+            padding: 10px;
+            font-size: 1.1em;
+            margin: 0;
+        }
+        .contat-cont h3{
+            font-size: 2em;
+        }
+    }
+
+    @media screen and (max-width: 300px){
+        html{
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .inicio h1, .serv-mosaico h3, .works h3, .works-function h3{
+            font-size: 1.4em;
+            padding: 2%;
+        }
+        .servicos h2, .servicos-cont h2, .servicos-cont-grid h3, .works-function-on h3, .contat-cont h3{
+            font-size: 1.2em;
+            padding: 2%;
+        }
+        footer{
+            width: 100%;
+            height: 150px;
+        }
+    }    

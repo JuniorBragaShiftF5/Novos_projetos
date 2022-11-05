@@ -18,10 +18,12 @@ html{
     -moz-transition: 2s;
     -ms-transition: 2s;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body{
     width: 100%;
+    min-width: 320px;
     overflow-x: hidden;
 }
 
@@ -57,12 +59,12 @@ menu > nav > ul > li > a:hover{
 
 .inicio{
     width: 100%;
+    min-width: 320px;
     height: 450px;
     background-image: url('../imgs/lawyer.jpg');
     opacity: 0.9;
     background-attachment: fixed;
     background-size: cover;
-    position: relative;
 }
 
     .inicio h1{
@@ -119,6 +121,7 @@ menu > nav > ul > li > a:hover{
 
     .sobre-nos{
         width: 100%;
+        min-width: 320px;
         height: 100%;
         position: relative;
         margin: 20px auto;
@@ -130,7 +133,8 @@ menu > nav > ul > li > a:hover{
     }
 
     .sobre-nos h2{
-        font-size: 3.8rem;
+        width: 100%;
+        font-size: 3.8em;
         margin: 50px auto;
         padding: 20px;
         grid-column-start: 1;
@@ -140,6 +144,7 @@ menu > nav > ul > li > a:hover{
     }
 
     .sobre-nos-grid{
+        width: 100%;
         height: 100%;
         background-color: rgba(255, 255, 220);
         border-radius: 15px;
@@ -148,7 +153,8 @@ menu > nav > ul > li > a:hover{
         overflow: hidden;
     }
 
-    .sobre-nos-grid img{
+    .sobre-nos-grid > img{
+        width: 100%;
         border-radius: 15px;
     }
 
@@ -156,8 +162,8 @@ menu > nav > ul > li > a:hover{
         margin: 20px;
     }
 
-.servicos{
- 
+#servicos{
+    min-width: 320px;
     margin: 0 auto;
     background-image: url('../imgs/servico.jpg');
     opacity: 0.9;
@@ -165,14 +171,14 @@ menu > nav > ul > li > a:hover{
     background-size: cover;
 }
 
-    .servicos h2{
+    #servicos h2{
         color: white;
         padding: 50px 0 0 0;
         font-size: 3.7rem;
         text-align: center;
     }
 
-    .servicos h3{
+    #servicos h3{
         color: #ccc;
         font-size: 2rem;
         text-align: center;
@@ -181,15 +187,16 @@ menu > nav > ul > li > a:hover{
     }
 
     .servicos-grid{
+        width: 100%;
+        min-width: 320px;
         margin: 0 auto;
         padding: 30px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 260px 280px;
+        
     }
 
     .servicos-grid img{
-        
         margin: 0 auto;
         padding: 20px;
         align-items: center;
@@ -203,7 +210,6 @@ menu > nav > ul > li > a:hover{
 
     .servicos-grid details{
         color: white;
-        position: absolute;
     }
 
     .servicos-grid P{
@@ -216,14 +222,16 @@ menu > nav > ul > li > a:hover{
     }
 
     .servicos-grid-serv{
+        width: 100%;
+        min-width: 320px;
         margin: 10px;
-        padding: 20px 20px 50px 20px;
+        padding: 20px;
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 1;
     }
-
+    
     .servicos-grid-serv-1{
         margin: 10px;
         padding: 20px 20px 50px 20px;
@@ -271,6 +279,7 @@ menu > nav > ul > li > a:hover{
 
 .temp-serv{
     width: 100%;
+    min-width: 320px;
     height: auto;
     padding: 20px;
 }
@@ -302,7 +311,6 @@ menu > nav > ul > li > a:hover{
     opacity: 0.9;
     background-attachment: fixed;
     background-size: cover;
-    display: inline-block;
 }
 
     .contato h2{
@@ -315,7 +323,6 @@ menu > nav > ul > li > a:hover{
         margin: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 500px;
         align-items: center;
     }
 
@@ -415,6 +422,7 @@ menu > nav > ul > li > a:hover{
 }
 
     .sect-map > img{
+        width: 100%;
         padding: 0 20px;
         grid-column-start: 1;
         grid-column-end: 1;
@@ -423,13 +431,19 @@ menu > nav > ul > li > a:hover{
     }
 
     .localizacao{
-        margin: 50px 20px;
+        width: 100%;
+        margin: 50px 0;
         padding: 0;
         grid-column-start: 2;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 1;
         box-shadow: -25px 20px 20px rgba(10,10,10,0.8);
+    }
+
+    .localizacao > iframe{
+        width: 100%;
+        height: 100%;
     }
 
 footer{
@@ -468,15 +482,20 @@ footer{
                 font-size: 1.8em;
             }
             .inicio{
+                width: 100%;
                 height: auto;
                 padding: 50px 0;
             }
             #sobre{
-                height: 1000px;
+                height: 1050px;
+                margin: 10px 0;
             }
             .sobre-nos{
                 margin: 0 auto;
                 padding: 30px 2%;
+            }
+            .sobre-nos h2{
+                font-size: 3em;
             }
             .sobre-nos-grid{
                 height: 1000px;
@@ -492,9 +511,6 @@ footer{
             }
             .temp-serv-calc{
                 width: 70%;
-            }
-            .contato{
-                height: auto;
             }
         }
 
@@ -528,18 +544,7 @@ footer{
                 padding: 15px;
                 display: inline-block;
             }
-            .sobre-nos-grid img{
-                width: 75%;
-            }
-            .servicos{
-                height: auto;
-                max-height: 920px;
-                padding: 30px;
-                margin: 30px 0;
-            }
-            .servicos-grid{
-                grid-template-rows: 300px 300px;
-            }
+            
             .servicos-grid P{
                 max-width: 300px;
                 font-size: 1.2em;
@@ -558,38 +563,20 @@ footer{
                 position: absolute;
             }
         }
-
-        @media screen and (max-width: 768px){
-             body{
-                overflow-x: hidden;
-                position: absolute;
-            }
+        @media screen and (max-width: 890px){
             #sobre{
-                width: 100%;
-                height: auto;
-                max-height: 2800px;
-                padding: 0;
-            }
-            .sobre-nos-grid{
-                width: 90%;
-            }
-            .botton a, .sobre-nos-grid p, .sobre-nos-grid h3{
-                font-size: 1.6em;
-            }
-            #sobre{
-                height: 350%;
-                max-height: 3300px;
-                padding: 0;
+                min-height: 1200px;
             }
             .servicos{
-                max-height: 1800px;
+                padding: 30px;
+                margin: 30px auto;
+                align-content: center;
             }
             .servicos-grid{
                 text-align: center;
                 margin: 0;
                 padding: 0;
                 grid-template-columns: repeat(2, 360px);
-                grid-template-rows: 280px 280px 360px;
             }
             .servicos-grid details{
                 width: 330px;
@@ -629,6 +616,74 @@ footer{
                 max-width: 200px;
                 text-align: center;
             }
+        }
+
+        @media screen and (max-width: 768px){
+             body{
+                overflow-x: hidden;
+                position: absolute;
+            }
+            #sobre{
+                width: 100%;
+                min-height: 3650px;
+                padding: 0;
+            }
+            .sobre-nos-grid{
+                width: 90%;
+            }
+            .botton a, .sobre-nos-grid p, .sobre-nos-grid h3{
+                font-size: 1.6em;
+            }
+            
+            .contato{
+                height: auto;
+                min-height: 630px;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                align-items: center;
+            }
+            .contato-redes{
+                width: 100%;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                align-items: center;
+                justify-content: center;
+            }
+            .contato-redes-1{
+                width: 100%;
+                display: inline-block;
+                margin: 20px auto;
+                padding: 0;
+                align-items: center;
+            }
+            .contato-redes-1 img{
+                margin: 40px auto 10px auto;
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+            .contato-redes-1 h3{
+                width: 100%;
+                margin: 10px auto;
+                padding: 0;
+                border: none;
+                display: inline-block;
+                text-align: center;
+            }
+            .contato-redes-1 > a{
+                margin: 0;
+                display: block;
+                text-align: center;
+                bottom: 20px;
+            }
+            .contato-redes-2{
+                width: 100%;
+                margin: 30px auto;
+                text-align: center;
+                display: inline-block;
+            }
             .sect-map{
                 width: 100%;
                 display: inline-block;
@@ -645,6 +700,29 @@ footer{
                 position: relative;
                 overflow: hidden;
                 display: inline-block;
+            }
+        }
+
+        @media screen and (max-width: 730px){
+            .servicos-grid{
+               width: 100%;
+               display: inline-block;
+            }
+            .servicos-grid-serv, .servicos-grid-serv-1, .servicos-grid-serv-2, .servicos-grid-serv-3, .servicos-grid-serv-4, .servicos-grid-serv-5{
+                height: 270px;
+            }
+            .servicos-grid details{
+                width: 100%;
+            }
+            .servicos-grid P{
+                max-width: 100%;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+            #sobre{
+                min-height: 3400px;
             }
         }
 
@@ -679,15 +757,8 @@ footer{
                 font-size: 1.5em;
                 margin: 20px;
             }
-            .servicos-grid{
-               width: 100%;
-               display: inline-block;
-            }
-            .servicos-grid-serv, .servicos-grid-serv-1, .servicos-grid-serv-2, .servicos-grid-serv-3, .servicos-grid-serv-4, .servicos-grid-serv-5{
-                height: 270px;
-            }
-            .servicos-grid P{
-                max-width: 400px;
+            .temp-serv-tmp h3{
+                font-size: 3em;
             }
             .temp-serv-calc{
                 width: 90%;
@@ -695,58 +766,14 @@ footer{
                 padding: 0;
                 text-align: center;
             }
-            .contato{
-                height: auto;
-                min-height: 630px;
-                display: inline-block;
-                padding: 0;
-                margin: 0;
-                align-items: center;
-            }
-            .contato-redes{
-                width: 100%;
-                display: inline-block;
-                margin: 0;
-                padding: 0;
-                align-items: center;
-                justify-content: center;
-            }
-            .contato-redes-1{
-                width: 100%;
-                display: inline-block;
-                margin: 20px auto;
-                padding: 0;
-                align-items: center;
-            }
-            .contato-redes-1 img{
-                width: 100%;
-                margin: 40px auto 10px auto;
-                display: block;
-                align-items: center;
-                justify-content: center;
-            }
-            .contato-redes-1 h3{
-                width: 100%;
-                margin: 10px auto;
-                padding: 0;
-                border: none;
-                display: inline-block;
-                text-align: center;
-            }
-            .contato-redes-1 > a{
-                margin: 0;
-                display: block;
-                text-align: center;
-                bottom: 20px;
-            }
-            .contato-redes-2{
-                width: 100%;
-                margin: 30px auto;
-                text-align: center;
-                display: inline-block;
-            }
             footer{
                 height: 150px;
                 text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 430px){
+            #sobre{
+                min-height: 3750px;
             }
         }

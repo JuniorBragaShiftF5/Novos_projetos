@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: 'Roboto', sans-serif, tahoma;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .clear{
@@ -123,7 +123,7 @@ html, .octa:hover, .menu-home > menu > nav > ul > li:hover a, div.botton:hover, 
     text-align: justify;
     font-size: 5em;
     z-index: 10;
-    padding: 50px;
+    padding: 50px 2%;
 }
 
 .inicio p{
@@ -136,6 +136,10 @@ html, .octa:hover, .menu-home > menu > nav > ul > li:hover a, div.botton:hover, 
 }
 
 .inicio video{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    min-height: 500px;
     opacity: 0.5;
     z-index: -999;
 }
@@ -521,8 +525,9 @@ footer{
         }
     }
 
-    @media screen and (max-width: 890px){
+    @media screen and (max-width: 990px){
         .inicio h1, .inicio p{
+            padding: 30 15px;
             text-align: center;
         }
         .servicos-cont-grid{
@@ -555,8 +560,7 @@ footer{
     
     @media screen and (max-width: 740px){
         .inicio h1{
-            font-size: 2em;
-            margin-top: 250px;
+            font-size: 2.5em;
         }
         .inicio p{
             font-size: 1em;
@@ -688,7 +692,7 @@ footer{
         }
     }
 
-    @media screen and (max-width: 300px){
+    /*@media screen and (max-width: 300px){
         html{
             box-sizing: border-box;
             overflow-x: hidden;

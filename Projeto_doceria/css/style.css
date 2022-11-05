@@ -61,8 +61,10 @@ html{
     background-attachment: fixed;
 }
 
-body{
+body > section{
+    min-width: 320px;
     background-color: rgba(255,255,255,0.5);
+
 }
 
 header > img{
@@ -120,6 +122,7 @@ menu > nav > ul > li > a{
     }
 
 #sobre{
+    min-width: 320px;
     padding: 50px 0;
     background-color: rgba(150,55,255,0.8);
     z-index: 99;
@@ -192,6 +195,7 @@ menu > nav > ul > li > a{
 
 .produtos-g{
     width: 60%;
+    min-width: 320px;
     background-image: url('../img/bgpirulito.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -395,6 +399,7 @@ menu > nav > ul > li > a{
 
 #contato{
     width: 80%;
+    min-width: 320px;
     background-color: rgba(255, 255, 25, 0.3);
     border-radius: 20px;
     margin: 50px auto;
@@ -469,6 +474,7 @@ menu > nav > ul > li > a{
         }
 
 footer{
+    min-width: 320px;
     height: 30px;
     background-color: black;
     text-align: right;
@@ -500,6 +506,7 @@ footer{
     }
 
     @media screen and (max-width: 1015px){
+
         header > img{
             margin: 50px auto 0 auto;
             text-align: center;
@@ -675,6 +682,9 @@ footer{
     }
 
     @media screen and (max-width: 550px){
+        #home{
+            min-height: 100vh;
+        }
         .sobre-grid-01, .sobre-grid-02, .sobre-grid-03{
             width: 100%;
             max-width: 160px;

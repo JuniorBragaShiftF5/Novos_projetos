@@ -6,6 +6,7 @@
 
 html, body{
     width: 100%;
+    height: 100vh;
     color: rgb(248, 246, 246);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,23 +14,23 @@ html, body{
 body{
     background-image: url('../img/paisagem-tarde.jpg');
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
 .infor{
-    width: 60%;
-    height: 950px;
+    max-width: 60%;
+    min-width: 320px;
     background-color: rgba(80, 80, 80, 0.5);
     border-radius: 20px;
-    background-size: 100% 100%;
     margin: 20px auto;
     text-align: center;
 }
 
 h1{
     font-size: 4.5em;
-    padding-top: 15px;
+    padding: 15px;
 }
 
 h2{
@@ -53,7 +54,7 @@ img:hover{
 }
 
 p{
-    margin:  10px 70px;
+    margin: 2% 10%;
     text-align: justify;
     text-indent: 30px;
 }
@@ -61,17 +62,22 @@ p{
 abbr{
     font-weight: bold;
     text-decoration: none;
+    cursor: cell;
 }
 
 .contato{
-    width: 70%;
-    margin: 20px auto;
-    padding-left: 60px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 2% 60px 5%;
 }
 
 nav{
     text-align: left;
     margin-left: 50px;
+}
+
+li{
+    line-height: 25px;
 }
 
 a{

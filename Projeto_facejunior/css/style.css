@@ -11,6 +11,7 @@
 
 header{
     width: 100%;
+    min-width: 320px;
     height: 70px;
     background-color: #3665af;
 }
@@ -89,6 +90,7 @@ main{
 
 .conection{
     width: 65%;
+    min-width: 320px;
     margin: 20px auto;
     padding: 0 2%;
     text-align: justify;
@@ -226,6 +228,7 @@ section{
 
 .linguas, .links-uteis, section p{
     width: 60%;
+    min-width: 320px;
     margin: 0 auto;
     padding: 10px 0;
 }

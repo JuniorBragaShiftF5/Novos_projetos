@@ -38,6 +38,7 @@ html{
 
 body{
     width: 92%;
+    min-width: 320px;
     padding: 9px 20px;
     margin: 0 auto;
     background-color: white;
@@ -119,7 +120,7 @@ p{
     margin: 10px 0;
     text-align: justify;
     color: black;
-    text-indent: 50px;
+    text-indent: 5%;
     font-family: sans-serif;
 }
 
@@ -195,7 +196,7 @@ th{
     font-family: sans-serif;
 }
 
- td{
+td{
     padding: 10px;
     text-align: left;
     color: rgb(192, 192, 192);
@@ -233,7 +234,7 @@ th{
 .artigo p{
     margin: 20px 0;
     color: black;
-    text-indent: 50px;
+    text-indent: 5%;
     font-family: sans-serif;
 }
 
@@ -257,7 +258,7 @@ footer p{
     margin: 10px 0;
     text-align: justify;
     color: black;
-    text-indent: 50px;
+    text-indent: 5%;
     font-family: sans-serif;
 }
 
@@ -563,6 +564,12 @@ textarea{
     .formulario-cont{
         width: 75%;
     }
+    .secao, .secao2{
+        width: 100%;
+        padding: 20px;
+        border-right: 0 solid black;
+        float: none;
+    }
 }
 
 @media screen and (max-width:705px){
@@ -577,17 +584,10 @@ textarea{
     #logo-menu{
         top: 100px;
     }
-    .secao, .secao2{
-        width: 100%;
-        padding: 20px;
-        border-right: 0 solid black;
-        float: none;
-    }
     .artigo{
         margin: 0;
         padding: 10px;
     }
-    
     .oque-fotos-galeria h3{
         font-size: 0.5em;
         text-align: center;
@@ -625,6 +625,12 @@ textarea{
     .logo{
         padding-top: 100px;
     }
+    figcaption{
+        padding: 50px;
+    }
+    figcaption > h3, figcaption > p{
+        font-size: 1em;
+    }
     .tabela,tr, th, td{
         width: 100%;
         margin: 0 auto;
@@ -650,6 +656,12 @@ textarea{
     }
     #logo-menu{
         top: 150px;
+    }
+    figcaption{
+        padding: 30px;
+    }
+    figcaption > h3, figcaption > p{
+        font-size: 0.9em;
     }
     .tabela, table, tr, th, td{
         font-size: 1em

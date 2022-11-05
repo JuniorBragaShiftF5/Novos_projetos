@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -17,15 +17,16 @@ body{
 }
 
 .tabuada{
-    width: 70%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 550px;
+    min-width: 320px;
     margin: 0 auto;
     background-color:rgb(238, 238, 220);
     padding: 5px 10px;
     border-radius: 25px;
 }
 
-p{
+h3{
     font-size: 1.2em;
     padding: 10px 15px;
 }
@@ -36,6 +37,15 @@ input{
     margin: 5px;
     cursor: pointer;
     outline: none;
+}
+
+input[type="radio"]{
+    margin: 0 5px 0 15px; 
+}
+
+p{
+    font-size: 1.1em;
+    display: inline;
 }
 
 .area{
@@ -53,4 +63,11 @@ input{
     text-align: left;
     background-color: rgb(250, 250, 250);
     display: none;
+}
+
+@media screen and (max-width:550px){
+    p{
+        display: block;
+        margin-left: 10%;
+    }
 }

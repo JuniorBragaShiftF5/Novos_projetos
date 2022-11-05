@@ -5,6 +5,7 @@
 }
 
 body{
+    width: 100%;
     margin: 0 auto;
     font-size: 1.5em;
     color: aliceblue;
@@ -13,9 +14,14 @@ body{
     background-color: rgb(51, 81, 216);
 }
 
+header h1{
+    text-align: center;
+    margin: auto;
+}
+
 section{
-    width: 100%;
     max-width: 600px;
+    min-width: 320px;
     margin: 10px auto;
     padding: 30px;
     background-color: rgb(229, 231, 191);
@@ -30,9 +36,15 @@ input{
     cursor: pointer;
 }
 
+.regist{
+    width: 100%;
+}
+
 select{
     width: 100%;
-    max-width: 160px;
+    max-width: 260px;
+    min-width: 160px;
+    min-height: 150px;
     margin: 20px auto;
     background-color: white;
     outline: none;

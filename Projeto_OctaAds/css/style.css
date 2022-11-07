@@ -139,9 +139,15 @@ html, .octa:hover, .menu-home > menu > nav > ul > li:hover a, div.botton:hover, 
     width: 100%;
     min-width: 320px;
     height: auto;
-    min-height: 500px;
+    min-height: 100%;
+    background-position: center center;
+    background-size: cover;
     opacity: 0.5;
     z-index: -999;
+}
+
+.inicio video source{
+    
 }
 
 .botton{

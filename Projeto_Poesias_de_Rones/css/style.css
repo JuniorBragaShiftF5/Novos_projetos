@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "escrita";
+    src: url('../font/Ananda\ Black\ Personal\ Use.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace, sans-serif ;
+}
+
+body{
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+h1{
+    font-size: 5em;
+}
+
+p{
+    padding: 15px;
+    font-family: 'escrita';
+    color: rgb(48, 48, 48);
+    font-weight: normal;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+    color: darkgrey;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.inicial{
+    min-height: 350px;
+    padding: 80px;
+    position: relative;
+    background-image: url('../img/bc0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+}
+
+.inicial h2{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 15px;
+}
+
+.inicial img{
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    transform: rotate(20deg);
+    top: 0;
+    right: 7%;
+    border-radius: 20px;
+}
+
+article{
+    margin: 0;
+    padding: 3% 10%;
+}
+
+article > div{
+    width: 100%;
+    max-width: 400px;
+    min-width: 320px;
+    padding: 20px;
+    text-align: left;
+    background-color: #ffdc8a36;
+    border-radius: 10px;
+}
+
+article div p{
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+.poesia{
+    background-image: url('../img/bc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-attachment: fixed;
+}
+
+.poesia div h3{
+    max-width: 100%;
+
+    text-align: center;
+    background-color: #FFDC8A;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.poema div{
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    background-color: white;
+    text-align: justify;
+    text-indent: 5%;
+}
+
+.poesia1{
+    background-image: url('../img/bc1.jpg');
+}
+
+.poesia2{
+    background-image: url('../img/bc2.jpg');
+}
+.poesia3{
+    background-image: url('../img/bc3.jpg');
+}
+
+aside{
+    text-align: right;
+    padding: 30px;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+    .inicial img{
+        top: 50%;
+
+    }
+}
+
+@media screen and (max-width: 830px){
+    .inicial img{
+        top: 100%;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .inicial img{
+        max-width: 150px;
+        transform: rotate(10deg);
+    }
+}
+@media screen and (max-width: 430px){
+    header{
+        padding: 20px;
+    }
+    h1{
+        font-size: 4em;
+    }
+    .inicial img{
+        display: none;
+    }
+    article{
+        margin: 0 auto;
+        padding: 2% 0;
+        align-content: center;
+    }
+    article > div{
+        margin: 0 auto;
+    }
+}

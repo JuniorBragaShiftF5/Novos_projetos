@@ -38,11 +38,13 @@ a{
     text-decoration: none;
     color: darkgrey;
     transition-duration: 0.5s;
+    font-weight: bold;
+    padding: 5px;
 }
 
 a:hover{
     text-decoration: underline;
-    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .inicial{

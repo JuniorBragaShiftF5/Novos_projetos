@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'escrita';
+    src: url('../font/Ananda\ Personal\ Use.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    padding: 2% 0;
+    position: relative;   
+    background-color: rgba(186, 147, 215, 0.904);
+}
+
+h1{
+    font-size: 5em;
+    padding: 15% 2% 5% 2%;
+    letter-spacing: 40px;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2{
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+h3{
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    line-height: 2.1em;
+    position: relative;
+}
+
+h3 > a{
+    font-family: 'escrita';
+}
+
+header p{
+    padding: 30px 0;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #622b8a18;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition-duration: 0.3s;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: #622B8A;
+    color: #d5abf3;
+    font-weight: bold;
+}
+
+video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -90;
+}
+
+main{
+    background-image: url('../img/bacg4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+aside{
+    width: 100%;
+    padding: 50px 20px;
+    margin-bottom: 10vh;
+}
+
+aside div{
+    width: 100%;
+}
+
+aside div{
+    margin: 8% 0;
+}
+
+.mudanca1, .mudanca2, .mudanca3, .mudanca4, .mudanca5, .mudanca6, .mudanca7{
+    width: 100%;
+    max-width: 100px;
+    margin: 2%;
+    position: relative;
+    display: none;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.giro1{
+    transform: rotate(-25deg);
+}
+
+.giro2{
+    transform: rotate(25deg);
+}
+
+.mudanca4{
+    max-width: 350px;
+    display: inline-block;
+}
+
+.giro1:hover, .giro2:hover{
+    transform: rotate(0);
+    transform: scale(2.5);
+    translate: 120px;
+    z-index: 88;
+}
+
+.giro2:hover{
+    translate: -120px;
+}
+
+section .mosaico-grid{
+    width: 100%;
+    min-width: 320px;
+}
+
+article{
+    width: 80%;
+    max-width: 1000px;
+    min-width: 320px;
+    min-height: 500px;
+    margin: 50px auto;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+article p{
+    color: black;
+    text-align: left;
+    padding: 10px 0;
+    padding-left: 10%;
+}
+
+.mosaico img{
+    width: 100%;
+    max-width: 45%;
+    min-width: 300px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    image-rendering: crisp-edges;
+    border-radius: 20px 0 0 20px;
+    left: 0;
+}
+
+.mosaico1 img{
+    width: 100%;
+    max-width: 45%;
+    min-width: 300px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    image-rendering: crisp-edges;
+    right: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+q{
+    width: 100%;
+    max-width: 60%;
+    height: 100%;
+    text-align: justify;
+    position: absolute;
+    font-family: 'escrita';
+    font-weight: bold;
+    font-size: 1em;
+    padding: 5% 2% 0 2%;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.74);
+    color: black;
+}
+
+.mosaico q{
+    border-radius: 0 20px 20px 0;
+}
+
+.mosaico1 q{
+    border-radius: 20px 0 0 20px;
+    left: 0;
+}
+
+.insta{
+    text-align: right;
+}
+
+.insta h4{
+    display: inline;
+}
+
+.insta img{
+    margin: 0 10px;
+}
+
+footer{
+    padding: 20px;
+    background-color: black;
+}
+
+    @media screen and (max-width: 1120px){
+        .mudanca4{
+            display: block;
+            margin: 0 auto;
+        }
+        .giro1:hover, .giro2:hover{
+            translate: 0px;
+        }
+        article{
+            min-height: 530px;
+        }
+    }
+
+    @media screen and (max-width: 1050px){
+        h1{
+            padding: 5% 2%;
+        }
+        q{
+            font-size: 0.9em;
+        }
+    }
+
+    @media screen and (max-width: 890px){
+        h1{
+            padding: 2%;
+        }
+        header p{
+            padding: 2% 0;
+        }
+    }
+
+    @media screen and (max-width: 740px){
+        .mosaico, .mosaico1{
+            position: relative;
+        }
+        .mosaico img, .mosaico1 img{
+            max-width: 100%;
+            border-radius: 20px;
+        }
+        .mosaico q, .mosaico1 q{
+            max-width: 100%;
+            font-size: 1em;
+            padding: 5% 2% 2% 3%;
+            border-radius: 20px;
+        }
+        .flor q{
+            font-size: 0.95em;
+        }
+    }
+
+    @media screen and (max-width: 690px){
+        h1{
+            font-size: 4em;
+            letter-spacing: 30px;
+        }
+    }
+
+    @media screen and (max-width: 605px){
+        h1{
+            padding: 0 2%;
+        }
+        header p{
+            padding: 1% 2%;
+        }
+        article{
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 510px){
+        .giro1:hover, .giro2:hover{
+            transform: scale(2);
+        }
+        article, .mosaico img, .mosaico1 img, q{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 460px){
+        h1{
+            font-size: 3em;
+            padding: 0;
+        }
+        header p{
+            padding: 1% 0;
+        }
+        .giro1:hover, .giro2:hover{
+            margin: 2% 8%;
+        }
+        article{
+            min-height: 550px;
+        }
+    }
+
+    @media screen and (max-width: 370px){
+        h1{
+            font-size: 2.5em;
+            letter-spacing: 20px;
+        }
+        .flor q{
+            font-size: 0.9em;
+        }
+    }

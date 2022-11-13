@@ -38,14 +38,14 @@ a{
     text-decoration: none;
     color: darkgrey;
     transition-duration: 0.5s;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 5px;
+    border-radius: 20px;
 }
 
 a:hover{
     text-decoration: underline;
     background-color: rgba(255, 255, 255, 0.507);
-    border-radius: 20px;
 }
 
 .inicial{

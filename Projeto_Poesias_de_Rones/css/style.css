@@ -55,6 +55,7 @@ a:hover{
     background-image: url('../img/bc0.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
     background-position: left center;
     background-attachment: fixed;
 }
@@ -102,11 +103,11 @@ article div p{
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
 }
 
 .poesia div h3{
     max-width: 100%;
-
     text-align: center;
     background-color: #FFDC8A;
     border-radius: 15px;

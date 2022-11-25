@@ -188,20 +188,24 @@ table{
     width: 100%;
 }
 
+caption{
+    background-color: white;
+}
+
 th{
-    background-color: rgb(194, 193, 193);
     text-align: justify;
     padding: 0 10px;
-    color: rgb(95, 95, 95);
     font-family: sans-serif;
+    color: rgb(192, 192, 192);
 }
 
 td{
+    background-color: rgb(194, 193, 193);
     padding: 10px;
     text-align: left;
-    color: rgb(192, 192, 192);
     font-size: 1.3em;
     font-family: sans-serif;
+    color: rgb(95, 95, 95);
 }
 
 .secao2{

@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'escrita';
+    src: url('../font/Ananda\ Personal\ Use.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    min-height: 100%;
+    text-align: center;
+    color: white;
+    background-image: url('../img/bacg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+html{
+    transition: 2s;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+    -o-scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    min-height: 100%;
+}
+
+body::-webkit-scrollbar{
+     width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #622b8a;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    min-height: 400px;
+    background-image: url('../img/espaco.png');
+    background-repeat: no-repeat;
+    background-size: 25% 50%;
+    background-position: top center;
+}
+
+.btn{
+    text-align: center;
+    margin: 50px auto 0 auto;
+    display: inline-block;
+}
+
+.menu-mobile{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    left: 0px;
+    top: 0px;
+    background-image: url('../img/clipart.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    transition: 2s;
+    z-index: 888;
+    display: none;
+}
+
+.menu-mobili-btn2{
+    padding-top: 40px;
+}
+
+.btn2{
+    display: none;
+}
+
+.menu-mobile:hover{
+    width: 100%;
+    background-image: none;
+}
+
+.menu-mobile:hover .btn2{
+    display: block;
+}
+
+.menu-mobile-btn2:hover .btn2{
+    display: block;
+}
+
+.efeito{
+    width: 100%;
+    font-family: 'escrita';
+    border: none;
+    margin: 10px 2% 0 2%;
+    padding: 10px 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 9px;
+    line-height: 1em;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 400ms;
+    animation: abrir 1s linear;
+}
+
+@keyframes abrir{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.efeito1{
+    color: #622b8a;
+}
+
+.efeito1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d5abf37c;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.efeito1:hover:before{
+    width: 100%;
+}
+
+header p{
+    padding: 18% 0 2% 0;
+}
+
+#frameteste{
+    width: 100%;
+    min-width: 320px;
+    min-height: 350px;
+}
+
+iframe{
+    width: 100%;
+    height: 260px;
+}
+
+iframe:hover{
+    height: 100%;
+    min-height: 600px;
+}
+
+.insta{
+    width: 100%;
+    min-width: 320px;
+    height: 200px;
+    text-align: right;
+    margin: 0;
+    padding: 0 2%;
+    position: relative;
+}
+
+.insta > div{
+    position: absolute;
+    margin: 0;
+    bottom: 2%;
+    right: 2%;
+    padding: 0 2%;
+}
+
+.insta h4{
+    display: inline;
+    position: absolute;
+    margin: 0;
+    bottom: 30%;
+    right: 20%;
+
+}
+
+.insta img{
+    margin: 0 10px;
+}
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: 100px;
+    bottom: 0;
+    padding: 30px 20px;
+    background-color: black;
+}
+
+
+    @media screen and (max-width:1320px){
+        iframe:hover{
+            min-height: 950px;
+        }
+    }
+
+    @media screen and (max-width: 890px){
+        header p{
+            padding: 30% 0 0 0;
+        }
+    }
+
+    @media screen and (max-width: 740px){
+        header p{
+            padding: 50% 0 0 0;
+        }
+    }
+
+    @media screen and (max-width: 605px){
+        header .btn{
+            display: none;
+        }
+        .menu-mobile{
+            display: inline-block;
+        }
+        .efeito{
+            width: 100%;
+            border-bottom: 2px solid #d5abf3;
+            margin: 0;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+        }
+    }
+    @media screen and (max-width: 580px){
+        iframe:hover{
+            min-height: 1100px;
+        }
+    }
+
+    @media screen and (max-width: 420px){
+        header p{
+            padding: 80% 0 0 0;
+        }
+        iframe:hover{
+            min-height: 1700px;
+        }
+        footer{
+            height: 120px;
+        }
+    }

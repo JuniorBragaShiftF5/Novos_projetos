@@ -84,8 +84,6 @@ html{
     margin: 0 auto;
 }
 
-
-
 .mosaico-slide{
     width: calc(100% / 7);
     max-width: 200px;
@@ -99,7 +97,6 @@ html{
 .mosaico-slide img{
     width: 100%;
 }
-
 
 .servico{
     width: 90%;

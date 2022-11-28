@@ -107,9 +107,9 @@
         <section id="contato" class="contatos">
             <div class="text-contatos">
                 <h2>Contato</h2>
-                <form action="mailto:j.junior.ce@hotmail.com">
-                    <input type="text" name="name" placeholder="Nome" />
-                    <input type="text" name="email" placeholder="E-mail" />
+                <form method="post" action="cadastro.php" autocomplete="on">
+                    <input type="text" name="name" required placeholder="Nome" min="3" max="30" autocomplete="name" />
+                    <input type="text" name="email" required placeholder="E-mail" min="3" max="30" autocomplete="email" autocomplete="email" />
                     <textarea name="mensagem" placeholder="Mensagem"></textarea>
                     <div>
                         <input type="submit" value="Enviar" />

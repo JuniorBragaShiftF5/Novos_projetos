@@ -68,31 +68,31 @@
                 <p>Fusca, raríssimo estado, todo original, motor 1600, extremamente conservado.</p>
                 <a class="botao" href="#contato">Entre em contato</a>
             </div><!--venda-carros-infor-->
-
             <div class="clear"></div>
         </section><!--venda-carros-->
         <section id="contato" class="contatos">
             <hr />
             <h2>Contato</h2>
-            <form>
+            <form method="post" action="cadastro.php" autocomplete="on">
                 <div class="contato-form w100">
-                    <span>Seu nome</span>
-                    <input type="text" name="name" />
+                    <span><label for="inome">Seu nome</label></span>
+                    <input type="text" name="name" id="inome" required placeholder="Nome completo" min="3" autocomplete="name" />
                 </div><!--contato-form w100-->
                 <div class="contato-form w50">
-                    <span>Seu E-mail</span>
-                    <input class="contato-form w50" type="text" name="email" />
+                    <span><label for="iemail">Seu E-mail</label></span>
+                    <input class="contato-form w50" type="text" name="email" id="iemail" required placeholder="E-mail" min="3" autocomplete="email" />
                 </div><!--contato-form w50-->
                 <div class="contato-form w50">
-                    <span>Seu telefone</span>
-                    <input class="contato-form w50" type="text" name="tel" />
+                    <span><label for="itel">Seu telefone</label></span>
+                    <input class="contato-form w50" type="text" name="tel" id="itel" required placeholder="Telefone" min="8" autocomplete="tel"/>
                 </div><!--contato-form w50-->
                 <div class="contato-form w100">
-                    <span>Menssagem</span>
-                    <textarea name="mensagem"></textarea>
+                    <span><label for="imensag">Mensagem</label></span>
+                    <textarea name="mensagem" id="imensag" required placeholder="Digite sua mensagem" ></textarea>
                 </div><!--contato-form w100-->
                 <div class="contato-form w100" style="text-align:center">
                     <input type="submit" value="Enviar" />
+                    <input type="reset" value="Limpar">
                 </div><!--contato-form w100-->
                 <div class="clear"></div>
             </form>
@@ -120,14 +120,14 @@
                         <p>R$ 50.000,00</p>
                         <div class="clear"></div>
                         <h2>Filtre por Ano</h2>
-                        <form>
+                        <form method="post" action="mailto:j.junior.ce@hotmail.com">
                             <div>
                                 <input type="checkbox" id="item1"/>
                                 <label for="item1">
                                     <div class="circle">
                                     </div><!--circle-->
                                 </label>
-                                <span>1950 a 1960</span>
+                                <span><label for="item1">1950 a 1960</label></span>
                             </div>
                             <div>
                                 <input type="checkbox" id="item2"/>
@@ -135,7 +135,7 @@
                                     <div class="circle">
                                     </div><!--circle-->
                                 </label>
-                                <span>1961 a 1970</span>
+                                <span><label for="item2">1961 a 1970</label></span>
                             </div>
                             <div>
                                 <input type="checkbox" id="item3"/>
@@ -143,7 +143,7 @@
                                     <div class="circle">
                                     </div><!--circle-->
                                 </label>
-                                <span>1971 a 1980</span>
+                                <span><label for="item3">1971 a 1980</label></span>
                             </div>
                             <div>
                                 <input type="checkbox" id="item4"/>
@@ -151,7 +151,7 @@
                                     <div class="circle">
                                     </div><!--circle-->
                                 </label>
-                                <span>1981 a 1990</span>
+                                <span><label for="item4">1981 a 1990</label></span>
                             </div>
                             <div>
                                 <input type="checkbox" id="item5"/>
@@ -159,7 +159,7 @@
                                     <div class="circle">
                                     </div><!--circle-->
                                 </label>
-                                <span>1991 a 2000</span>
+                                <span><label for="item5">1991 a 2000</label></span>
                             </div>
                         </form>
                     </div><!--venda-filter-fixed-->

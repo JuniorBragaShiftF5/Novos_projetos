@@ -462,7 +462,7 @@ footer p{
     display: none;
 }
 
-.venda-filter-fixed label{
+.venda-filter-fixed form div > label{
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -490,7 +490,7 @@ footer p{
     display: block;
 }
 
-.venda-filter-fixed > form span{
+.venda-filter-fixed form span label{
     display: inline-block;
     padding: 0;
     vertical-align: top;

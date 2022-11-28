@@ -98,25 +98,26 @@
         <section id="contato" class="contatos">
             <hr />
             <h2>Contato</h2>
-            <form action="mailto:j.junior.ce@hotmail.com">
+            <form method="post" action="cadastro.php" autocomplete="on">
                 <div class="contato-form w100">
-                    <span>Seu nome</span>
-                    <input type="text" name="name" />
+                    <span><label for="inome">Seu nome</label></span>
+                    <input type="text" name="name" id="inome" required placeholder="Nome completo" min="3" autocomplete="name" />
                 </div><!--contato-form w100-->
                 <div class="contato-form w50">
-                    <span>Seu E-mail</span>
-                    <input class="contato-form w50" type="text" name="email" />
+                    <span><label for="iemail">Seu E-mail</label></span>
+                    <input class="contato-form w50" type="text" name="email" id="iemail" required placeholder="E-mail" min="8" autocomplete="email" />
                 </div><!--contato-form w50-->
                 <div class="contato-form w50">
-                    <span>Seu telefone</span>
-                    <input class="contato-form w50" type="text" name="tel" />
+                    <span><label for="itel">Seu telefone</label></span>
+                    <input class="contato-form w50" type="text" name="tel" id="itel" required placeholder="Telefone" min="8" autocomplete="tel" />
                 </div><!--contato-form w50-->
                 <div class="contato-form w100">
-                    <span>Menssagem</span>
-                    <textarea name="mensagem"></textarea>
+                    <span><label for="imensag">Mensagem</label></span>
+                    <textarea name="mensagem" id="imensag" required placeholder="Digite sua mensagem"></textarea>
                 </div><!--contato-form w100-->
                 <div class="contato-form w100" style="text-align:center">
                     <input type="submit" value="Enviar" />
+                    <input type="reset" value="Limpar">
                 </div><!--contato-form w100-->
                 <div class="clear"></div>
             </form>

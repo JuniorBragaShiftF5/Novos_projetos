@@ -144,13 +144,13 @@
                 </div><!--contato-redes-1-->
                 <div class="contato-redes-2">
                     <div class="contato-input">
-                        <form action="mailto:j.junior.ce@hotmail.com">
-                            <h3>Nome</h3>
-                                <input type="text" name="nome" required placeholder="*Nome" />
-                            <h3>E-mail</h3>
-                                <input type="text" name="email" required placeholder="*E-mail" />
-                            <h3>Dúvidas ou Comentários</h3>
-                                <textarea type="text" name="duvidas" placeholder="*Dúvidas ou Comentários"></textarea>
+                        <form method="post" action="cadastro.php" autocomplete="on">
+                            <h3><label for="inome">Nome</label></h3>
+                                <input type="text" name="nome" id="inome" required placeholder="*Nome" min="3" max="30" autocomplete="name" />
+                            <h3><label for="iemail">E-mail</label></h3>
+                                <input type="text" name="email" id="iemail" required placeholder="*E-mail" min="8" max="30" autocomplete="email" />
+                            <h3><label for="icoment">Dúvidas ou Comentários</label></h3>
+                                <textarea type="text" name="duvidas" id="icoment" placeholder="*Dúvidas ou Comentários"></textarea>
                             <input class="submit" type="submit" name="acao" value="Enviar" />
                         </form>
                     </div><!--contato-input-->

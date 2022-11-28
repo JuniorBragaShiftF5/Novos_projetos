@@ -21,14 +21,14 @@
                 <div class="logo">
                     <h2>facejunior</h2>
                 </div><!--logo-->
-                <form class="form-login">
+                <form action="cadastro.php" method="post" class="form-login" autocomplete="on">
                     <div class="form-login-1">
-                        <p>E-mail ou telefone</p>
-                        <input type="email" name="email" />
+                        <p><label for="iemail">E-mail ou telefone</label></p>
+                        <input type="email" name="email" id="iemail" required placeholder="E-mail ou telefone" min="8" max="30"/>
                     </div><!--form-login-1-->
                     <div class="form-login-1">
-                        <p>Senha</p>
-                        <input type="password" name="password" />
+                        <p><label for="isenha">Senha</label></p>
+                        <input type="password" name="password" id="isenha" required placeholder="******" min="6" autocomplete="current-password" />
                     </div><!--form-login-1-->
                     <div class="form-login-1">
                         <input type="submit" name="acao" value="Entrar"  />
@@ -47,24 +47,24 @@
                 <div class="conection-conta">
                     <h2>Abra uma conta</h2>
                     <h3>É gratuito e sempre será.</h3>
-                    <form action="mailto:j.junior.ce@hotmail.com">
-                        <input type="text" name="Nome" required placeholder="Nome" />
-                        <input type="text" name="Sobrenome" required placeholder="Sobrenome" />
-                        <input type="email" name="email" required placeholder="Celular ou e-mail" />
-                        <input type="password" name="password" required placeholder="Senha" />
+                    <form method="post" action="cadastro.php" autocomplete="on">
+                        <input type="text" name="Nome" required placeholder="Nome" min="3" max="10" autocomplete="name" />
+                        <input type="text" name="Sobrenome" required placeholder="Sobrenome" min="3" max="30" autocomplete="additional-name" />
+                        <input type="email" name="email" required placeholder="Celular ou e-mail" min="3" max="20" />
+                        <input type="password" name="password" required placeholder="Senha" min="6" max="20" autocomplete="new-password" />
                     </form>
-                    <h3>Data de nascimento</h3>
+                    <h3><label for="idata">Data de nascimento</label></h3>
                     <div>
-                        <form class="form-date">
-                            <input type="date" name="date" required/>
+                        <form method="post" class="form-date">
+                            <input type="date" name="date" id="idata" required />
                             <a>Por que precisa informar minha data de nascimento?</a>
                         </form><!--form-date-->
                         <div class="clear"></div>
-                        <form class="radio-sex">
+                        <form method="post" class="form-radio-sex">
                             <input type="radio" id="masculino" name="sexo" value="masculino">
                             <label for="masculino">Masculino</label>
                             <input type="radio" id="feminino" name="sexo" value="feminino">
-                            <label for="femenino">Feminino</label>
+                            <label for="feminino">Feminino</label>
                         </form>
                         <div class="clear"></div>
                     </div>

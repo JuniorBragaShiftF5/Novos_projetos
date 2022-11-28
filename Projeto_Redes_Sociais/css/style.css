@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    min-height: 670px;
+    background-image: url('../img/bc5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+li a > img{
+    width: 100%;
+    max-width: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.534);
+    border: 1px solid #ccc;
+    margin: 2px 0;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+}
+
+li a > img:hover{
+    border: 3px solid #ccc;
+    background-color: white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s;
+
+}
+
+section{
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+}
+
+.cel{
+    height: 100%;
+    background-image: url('../img/cel1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    padding-top: 76px;
+}
+
+iframe{
+    width: 87%;
+    height: 86%;
+    margin: 0 auto;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
+    border-radius: 3px;
+}
+
+    @media screen and (max-width: 480px){
+        body{
+            height: 800px;
+        }
+        section{
+            top: 30%;
+            left: 50%;
+            margin: 0;
+            padding: 0;
+            transform: translate(-50%, -30%);
+        }
+        header{
+            width: 100%;
+            position: absolute;
+            top: auto;
+            bottom: 2%;
+        }
+        li{
+            display: inline;
+            padding: 10px;
+        }
+    }

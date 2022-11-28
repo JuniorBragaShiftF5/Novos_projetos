@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    min-height: 670px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
+}
+
+#whats{
+    width: 300px;
+    height: 600px;
+    
+}
+
+#whats img, #linkedin img, #github img, #faceb img, #email img, #instag img, footer img{
+    width: 220px;
+}
+
+#local{
+    width: 250px;
+    height: 700px;
+}
+
+#local > iframe{
+    width: 220px;
+    height: 700px;
+}
+
+main > a{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 20px;
+    background-color: #025D54;
+    color: white;
+}
+
+main > a:hover{
+    background-color: #028376;
+}

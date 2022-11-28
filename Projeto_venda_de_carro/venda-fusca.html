@@ -84,7 +84,7 @@
                 </div><!--contato-form w50-->
                 <div class="contato-form w50">
                     <span><label for="itel">Seu telefone</label></span>
-                    <input class="contato-form w50" type="text" name="tel" id="itel" required placeholder="Telefone" min="8" autocomplete="tel"/>
+                    <input class="contato-form w50" type="text" name="tel" id="itel" required placeholder="(XX)XXXX-XXXX" autocomplete="tel" pattern="^\(\d{2}\d{4,5}-\d{4}$" />
                 </div><!--contato-form w50-->
                 <div class="contato-form w100">
                     <span><label for="imensag">Mensagem</label></span>
@@ -120,7 +120,7 @@
                         <p>R$ 50.000,00</p>
                         <div class="clear"></div>
                         <h2>Filtre por Ano</h2>
-                        <form method="post" action="mailto:j.junior.ce@hotmail.com">
+                        <form method="post" action="cadastro.php">
                             <div>
                                 <input type="checkbox" id="item1"/>
                                 <label for="item1">

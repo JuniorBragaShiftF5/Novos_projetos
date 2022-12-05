@@ -19,7 +19,8 @@
                     <div class="logo">
                         <img src="img/shift_F5.png">
                     </div><!--logo-->
-                    <nav class="menu-desktop">
+                    <div class="menu-mobile" onclick="clicarMenu()"></div><!--menu-mobile-->
+                    <nav id="itens" class="menu-desktop">
                         <ul>
                             <li><a title="Serviços" href="#servicos">Serviços</a></li>
                             <li><a title="Sobre" href="#sobre">Sobre</a></li>
@@ -27,14 +28,6 @@
                             <li><a title="Extra" href="#extra">Extra</a></li>
                         </ul>
                     </nav><!--menu-desktop-->
-                    <nav class="menu-mobile">
-                        <ul>
-                            <li><a title="Serviços" href="#servicos">Serviços</a></li>
-                            <li><a title="Sobre" href="#sobre">Sobre</a></li>
-                            <li><a title="Contato" href="#contato">Contato</a></li>
-                            <li><a title="Extra" href="#extra">Extra</a></li>
-                        </ul>
-                    </nav><!--menu-mobile-->
                 </div><!--home-menu-->
                 <div class="clear"></div>
                 <div class="text-initial">
@@ -124,5 +117,15 @@
         <footer>
             © Copyright.Todos os direitos reservados. Desenvolvido por ShiftF5 sites e WebDesigner.
         </footer>
+        <script>
+            function clicarMenu(){
+                if (itens.style.display == 'block'){
+                    itens.style.display = 'none';
+                }
+                else{
+                    itens.style.display = 'block';
+                }
+            }
+        </script>
     </body>
 </html>

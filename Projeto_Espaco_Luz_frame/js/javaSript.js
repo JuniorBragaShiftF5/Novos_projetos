@@ -68,3 +68,16 @@ function mudar(tipo){
     mude6.style.display = 'inline-block'
     mude7.style.display = 'inline-block'
 }
+
+function clicarMenu(){
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none';
+    }
+    else{
+        itens.style.display = 'block';
+    }
+}
+
+function abrirMenu(){
+    iframet.style.display = 'block';
+}

@@ -22,24 +22,17 @@
                     <img src="img/logo1.png" />
                 </div><!--menu-logo-->
                 <div class="menu-home">
-                    <nav class="menu-desktop">
+                    <div class="menu-mobile" onclick="clicarMenu()">
+                    </div><!--menu-mobile-->
+                    <nav id="itens" class="menu-desktop">
                         <ul>
-                            <li><a style="color:rgb(224, 54, 54);" title="Home" href="#home">Home</a></li>
+                            <li><a class="destaq" title="Home" href="#home">Home</a></li>
                             <li><a title="Venda" href="venda.html" rel="next">Venda</a></li>
-                            <li><a title="Eventos" href="" rel="next">Eventos</a></li>
+                            <li><a title="Eventos" href="#" rel="next">Eventos</a></li>
                             <li><a title="Sobre nós" href="sobre.html" rel="next">Sobre nós</a></li>
                             <li><a title="Contato" href="#contato">Contato</a></li>
                         </ul>
                     </nav><!--menu-desktop-->
-                    <nav class="menu-mobile">
-                        <ul>
-                            <li><a style="color:black;" title="Home" href="#home">Home</a></li>
-                            <li><a title="Venda" href="venda.html" rel="next">Venda</a></li>
-                            <li><a title="Eventos" href="">Eventos</a></li>
-                            <li><a title="Sobre nós" href="sobre.html" rel="next">Sobre nós</a></li>
-                            <li><a title="Contato" href="#contato">Contato</a></li>
-                        </ul>
-                    </nav><!--menu-mobile-->
                 </div><!--menu-home-->
                 <div class="clear"></div>
             </div><!--menu-->
@@ -135,5 +128,15 @@
             <p>© Copyright.Todos os direitos reservados. Desenvolvido por ShiftF5 sites e WebDesigner.</p>
             <div class="clear"></div>
         </footer>
+        <script>
+            function clicarMenu(){
+                if (itens.style.display == 'block'){
+                    itens.style.display = 'none';
+                }
+                else{
+                    itens.style.display = 'block';
+                }
+            }
+        </script>
     </body>
 </html>

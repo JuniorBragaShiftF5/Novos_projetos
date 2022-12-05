@@ -22,7 +22,8 @@
                     <div class="logo">
                         <img src="img/Aline-Melo-Logo.png" />
                     </div><!--logo-->
-                    <nav class="menu-desktop">
+                    <div class="menu-mobile" onclick="clicarMenu()"></div>
+                    <nav id="itens" class="menu-desktop">
                         <ul>
                             <li><a title="Quem sou" href="#quemsou">Quem sou</a></li>
                             <li><a title="Tratamentos" href="#tratamentos">Tratamentos</a></li>
@@ -30,14 +31,6 @@
                             <li><a title="Contato" href="#contato">Contato</a></li>
                         </ul>
                     </nav><!--menu-desktop-->
-                    <nav class="menu-mobile">
-                        <ul>
-                            <li><a title="Quem sou" href="#quemsou">Quem sou</a></li>
-                            <li><a title="Tratamentos" href="#tratamentos">Tratamentos</a></li>
-                            <li><a title="Depoimentos" href="#depoimentos">Depoimentos</a></li>
-                            <li><a title="Contato" href="#contato">Contato</a></li>
-                        </ul>
-                    </nav><!--menu-mobile-->
                 </div><!--menu-->
             </div><!--home-->
             <div class="clear"></div>
@@ -232,6 +225,15 @@
                 <h2>© Copyright.Todos os direitos reservados. Desenvolvido por ShiftF5 sites e WebDesigner.</h2>
             </div><!--footer-dev-->
         </footer>
+        <script>
+            function clicarMenu(){
+                if (itens.style.display == 'block'){
+                    itens.style.display = 'none';
+                }
+                else{
+                    itens.style.display = 'block';
+                }
+            }
+        </script>
     </body>
-
 </html>

@@ -71,27 +71,6 @@ header{
     display: none;
 }
 
-.menu-mobili-btn2{
-    padding-top: 40px;
-}
-
-.btn2{
-    display: none;
-}
-
-.menu-mobile:hover{
-    width: 100%;
-    background-image: none;
-}
-
-.menu-mobile:hover .btn2{
-    display: block;
-}
-
-.menu-mobile-btn2:hover .btn2{
-    display: block;
-}
-
 .efeito{
     width: 100%;
     font-family: 'escrita';
@@ -369,11 +348,19 @@ footer{
     }
 
     @media screen and (max-width: 605px){
-        header .btn{
+        #itens{
             display: none;
+            position: fixed;
+            top: 70px;
+            z-index: 999;
         }
         .menu-mobile{
-            display: inline-block;
+            display: block;
+        }
+        .btn{
+            width: 90%;
+            margin: 0px;
+
         }
         .efeito{
             width: 100%;

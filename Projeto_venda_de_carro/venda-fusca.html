@@ -14,6 +14,17 @@
         <meta name="keywords" content="carros,autenticos,vintege" />
         <meta name="generator" content="VS Code" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+        <style>
+            .menu-home nav ul li a{
+                color: black;
+                transition: 1s;
+            }
+            @media screen and (max-width: 768px){
+                .menu-home nav ul li a{
+                    color: rgb(211, 60, 60);
+                }
+            }
+        </style>
     </head>
     <body>
         <header style="border-bottom: 3px solid rgb(224, 54, 54); height: 150px;">
@@ -22,25 +33,17 @@
                     <img src="img/logo1.png" />
                 </div><!--menu-logo-->
                 <div class="menu-home">
-                    <nav class="menu-desktop">
+                    <div class="menu-mobile" onclick="clicarMenu()">
+                    </div><!--menu-mobile-->
+                    <nav id="itens" class="menu-desktop">
                         <ul>
-                            <li><a style="color:black;" title="Home" href="index.html" rel="prev">Home</a></li>
-                            <li><a style="color:rgb(224, 54, 54);" title="Venda" href="venda.html" rel="next">Venda</a></li>
-                            <li><a style="color:black;" title="Eventos" href="#eventos">Eventos</a></li>
-                            <li><a style="color:black;" title="Sobre nós" href="sobre.html" rel="next">Sobre nós</a></li>
-                            <li><a style="color:black;" title="Contato" href="#contato">Contato</a></li>
+                            <li><a title="Home" href="index.html">Home</a></li>
+                            <li><a class="destaq"  title="Venda" href="venda.html" rel="next">Venda</a></li>
+                            <li><a title="Eventos" href="#" rel="next">Eventos</a></li>
+                            <li><a title="Sobre nós" href="sobre.html" rel="next">Sobre nós</a></li>
+                            <li><a  title="Contato" href="#contato">Contato</a></li>
                         </ul>
                     </nav><!--menu-desktop-->
-                    <nav class="menu-mobile">
-                        <ul>
-                            <li><a title="Home" href="index.html" rel="prev">Home</a></li>
-                            <li><a style="color:black;" title="Venda" href="venda.html" rel="next">Venda</a></li>
-                            <li><a title="Eventos" href="#eventos">Eventos</a></li>
-                            <li><a title="Sobre nós" href="sobre.html" rel="next">Sobre nós</a></li>
-                            <li><a title="Contato" href="#contato">Contato</a></li>
-                        </ul>
-                    </nav><!--menu-mobile-->
-                    <div class="clear"></div>
                 </div><!--menu-home-->
             </div><!--menu-->
         </header>
@@ -219,5 +222,15 @@
             <p>© Copyright.Todos os direitos reservados. Desenvolvido por ShiftF5 sites e WebDesigner.</p>
             <div class="clear"></div>
         </footer>
+        <script>
+            function clicarMenu(){
+                if (itens.style.display == 'block'){
+                    itens.style.display = 'none';
+                }
+                else{
+                    itens.style.display = 'block';
+                }
+            }
+        </script>
     </body>
 </html>

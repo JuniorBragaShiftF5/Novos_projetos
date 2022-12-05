@@ -51,6 +51,16 @@ header{
 }
 
 .menu-mobile{
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/png-clipart.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 30px 5% 0 5%;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    float: none;
     display: none;
 }
 
@@ -88,6 +98,10 @@ header{
     padding-top: 230px;
     padding-left: 15%;
     font-style: italic;
+}
+
+.menu-home nav ul li > .destaq{
+    color: rgb(224, 54, 54);
 }
 
 .home .home-menu > h2:nth-of-type(1){
@@ -412,6 +426,12 @@ footer p{
     margin-top: 8px;
     border-radius: 20px;
     position: relative;
+}
+
+.venda-filter-fill input[type=range]{
+    width: 100%;
+    height: 30px;
+    z-index: 999;
 }
 
 .venda-filter-preco{
@@ -793,58 +813,53 @@ footer p{
         float: none;
         margin: 0 auto;
     }
-    .menu-desktop{
+    .menu-home{
+        width: 100%;
+        min-width: 320px;
+    }
+    .menu-mobile{
+        display: block;
+        position: fixed;
+    }
+    #itens{
         display: none;
+    }
+    .menu-desktop{
+        width: 95%;
+        display: block;
+        position: fixed;
+    }
+
+    .menu-home nav ul li{
+        width: 100%;
+        background-color: bisque;
+        border-bottom: 3px solid rgb(211, 60, 60);
+        float: none;
+        display: block;
+        padding: 20px;
+        transition: 1s;
     }
     .menu-home nav ul li a{
-        color: rgb(211, 60, 60);
-    }
-    .menu-home{
-        width: 40px;
-        height: 40px;
-        background-image: url('../img/png-clipart.png');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        margin: 30px 5% 0 5%;
-        position: absolute;
-        top: 30px;
-        right: 0;
-        float: none;
-    }
-        .menu-home:hover .menu-mobile{
-            display: inline-block;
-        }
-    .menu-mobile{
         width: 100%;
-        display: none;
         margin: 0;
         padding: 0;
         text-align: center;
-        position: fixed;
         top: 100px;
         left: 0;
         right: 0;
-        float: none;
-        border-bottom: 5px solid rgb(211, 60, 60);
-    }
-    .menu-mobile ul li{
-        width: 100%;
-        background-color: bisque;
-        display: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
+        color: rgb(211, 60, 60);
         transition: 1s;
     }
-        .menu-mobile ul li:hover{
+    .menu-home nav ul li > .destaq{
+        color: black;
+    }
+        .menu-home ul li:hover{
             background-color: rgb(192, 54, 54);
         }
-        .menu-mobile ul li:hover a{
+        .menu-home ul li:hover a{
             color: white;
         }
-    .home, .home-menu{
-        padding-top: 50px;
-    }
+    
     .servico{
         height: 680px;
         position: relative;
@@ -907,6 +922,9 @@ footer p{
         width: 100%;
         margin: 0 auto;
         text-align: center;
+    }
+    .contatos{
+        min-height: 900px;
     }
 }
 

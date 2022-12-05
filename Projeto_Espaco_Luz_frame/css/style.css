@@ -53,11 +53,7 @@ main{
 header{
     width: 100%;
     min-width: 320px;
-    min-height: 400px;
-    background-image: url('../img/espaco.png');
-    background-repeat: no-repeat;
-    background-size: 25% 50%;
-    background-position: top center;
+    padding-top: 30px;
 }
 
 .btn{
@@ -79,27 +75,6 @@ header{
     transition: 2s;
     z-index: 888;
     display: none;
-}
-
-.menu-mobili-btn2{
-    padding-top: 40px;
-}
-
-.btn2{
-    display: none;
-}
-
-.menu-mobile:hover{
-    width: 100%;
-    background-image: none;
-}
-
-.menu-mobile:hover .btn2{
-    display: block;
-}
-
-.menu-mobile-btn2:hover .btn2{
-    display: block;
 }
 
 .efeito{
@@ -150,18 +125,18 @@ header{
 }
 
 header p{
-    padding: 18% 0 2% 0;
+    padding: 2% 0 2% 0;
 }
 
 #frameteste{
     width: 100%;
-    min-width: 320px;
-    min-height: 350px;
 }
 
-iframe{
+#iframet{
     width: 100%;
     height: 260px;
+    display: none;
+    
 }
 
 iframe:hover{
@@ -216,24 +191,20 @@ footer{
         }
     }
 
-    @media screen and (max-width: 890px){
-        header p{
-            padding: 30% 0 0 0;
-        }
-    }
-
-    @media screen and (max-width: 740px){
-        header p{
-            padding: 50% 0 0 0;
-        }
-    }
-
     @media screen and (max-width: 605px){
-        header .btn{
-            display: none;
-        }
         .menu-mobile{
             display: inline-block;
+            margin: auto;
+        }
+        #itens{
+            width: 100%;
+            display: none;
+            
+        }
+        .btn{
+            width: 100%;
+            margin: 0;
+            display: block;
         }
         .efeito{
             width: 100%;
@@ -249,9 +220,6 @@ footer{
     }
 
     @media screen and (max-width: 420px){
-        header p{
-            padding: 80% 0 0 0;
-        }
         iframe:hover{
             min-height: 1700px;
         }

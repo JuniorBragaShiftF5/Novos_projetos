@@ -65,7 +65,9 @@ html{
 .menu-mobile{
     width: 30px;
     height: 30px;
-    margin-top: 30px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
     background-image: url('../img/png-clipart.png');
     background-size: 100% 100%;
     cursor: pointer;
@@ -453,31 +455,31 @@ footer{
 }
 
 @media screen and (max-width: 820px){
-    .menu-desktop{
-        display: none;
-    }
     .menu-mobile{
         display: block;
+        position: fixed;
+        z-index: 888;
+    }
+    #itens{
+        display: none;
     }
     .menu nav ul{
+        z-index: 999;
         width: 100%;
         background-color: white;
         top: 80px;
         left: 0;
-        position: absolute;
+        
+        position: fixed;
         transition: 1s;
-        display: none;
-        opacity: 0;
+        
     }
     .menu nav ul li{
         display: block;
         padding: 20px;
         transition: 1s;
+        border-bottom: 1px solid #ccc;
     }
-        .menu-mobile:hover ul{
-            display: block;
-            opacity: 1;
-        }
         .menu nav ul li:hover{
             background-color: #688293;
         }
@@ -540,13 +542,29 @@ footer{
 }
 
 @media screen and (max-width: 500px){
+    .home{
+        height: 220px;
+    }
+    .menu{
+        width: 100%;
+        padding: 0;
+    }
     .logo{
         float: none;
-        margin: 30px auto;
+        margin: 10px auto;
+    }
+    .menu nav{
+        float: none;
+    }
+    .menu nav ul{
+        top: 0px;
+        position: relative;
     }
     .menu-mobile{
-        margin-top: -140px;
-        margin-right: -10px;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 30px auto;
     }
     .tratamento-single{
         width: 90%;

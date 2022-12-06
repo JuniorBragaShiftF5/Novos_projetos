@@ -26,7 +26,7 @@
             }
         </style>
     </head>
-    <body>
+    <body onresize="mudarTela()">
         <header style="border-bottom: 3px solid rgb(224, 54, 54); height: 150px;">
             <div class="menu">
                 <div class="menu-logo">
@@ -223,6 +223,14 @@
             <div class="clear"></div>
         </footer>
         <script>
+            function mudarTela(){
+                if (window.innerWidth >= 769){
+                    itens.style.display = 'block';
+                }
+                else{
+                    itens.style.display = 'none';
+                }
+            }
             function clicarMenu(){
                 if (itens.style.display == 'block'){
                     itens.style.display = 'none';

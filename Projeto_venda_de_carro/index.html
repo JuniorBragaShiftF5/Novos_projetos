@@ -15,7 +15,7 @@
         <meta name="generator" content="VS Code" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
     </head>
-    <body>
+    <body onresize="mudarTela()">
         <header>
             <div id="home" class="menu">
                 <div class="menu-logo">
@@ -129,6 +129,14 @@
             <div class="clear"></div>
         </footer>
         <script>
+            function mudarTela(){
+                if (window.innerWidth >= 769){
+                    itens.style.display = 'block';
+                }
+                else{
+                    itens.style.display = 'none';
+                }
+            }
             function clicarMenu(){
                 if (itens.style.display == 'block'){
                     itens.style.display = 'none';

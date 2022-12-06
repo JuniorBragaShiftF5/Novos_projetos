@@ -1,3 +1,11 @@
+function mudarTela(){
+    if (window.innerWidth >= 606){
+        itens.style.display = 'block';
+    }
+    else{
+        itens.style.display = 'none';
+    }
+}
 function mudar(tipo){
     var mude1 = window.document.querySelector('.mudanca1')
     var mude2 = window.document.querySelector('.mudanca2')

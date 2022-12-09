@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Recuperação de senha</title>
+        <link rel="stylesheet" href="css/stylerecup.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <meta charset="UTF-8">
+        <meta name="author" content="Junior Braga" />
+        <meta name="copyright" content="© 2022 ShiftF5" />
+        <meta name="generator" content="VS Code" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    </head>
+    <body>
+        <main>
+            <section>
+                <form action="incricao.php" method="post" autocomplete="on">
+                    <fieldset>
+                        <legend>Faça seu cadastro</legend>
+                        <p>
+                            <label for="inome">Nome: </label>
+                            <input type="text" name="nome" id="inome" required placeholder="Nome completo" min="10" autocomplete="name" />
+                        </p>
+                        <p>
+                            <label for="iemail">E-mail: </label>
+                            <input type="email" name="email" id="iemail" required placeholder="E-mail" min="9" autocomplete="email" />
+                        </p>
+                        <p>
+                            <label for="icidade">Cidade: </label>
+                            <input type="text" name="cidade" id="icidade" required placeholder="Cidade" min="5" autocomplete="on" />
+                        </p>
+                        <p>
+                            <label for="iestado">Estado: </label>
+                            <select name="estado" id="iestado" required>
+                                <option value="">--- Escolha ---</option>
+                                <optgroup label="Região Nordeste">
+                                    <option value="">Alagoas</option>
+                                    <option value="">Bahia</option>
+                                    <option value="">Ceará</option>
+                                    <option value="">Maranhão</option>
+                                    <option value="">Paraíba</option>
+                                    <option value="">Pernambuco</option>
+                                    <option value="">Piauí</option>
+                                    <option value="">Rio Grande do Norte</option>
+                                    <option value="">Sergipe</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="iprof">Profissão: </label>
+                            <input type="text" name="prof" id="iprof" list="listprof" required placeholder="Sua atividade" />
+                            <datalist id="listprof">
+                                <option>Desenvolvedor</option>
+                                <option>Programador</option>
+                                <option>Estudante</option>
+                            </datalist>
+                        </p>
+                        <p>
+                            <label for="isenha">Definir Senha: </label>
+                            <input type="password" name="senha" id="isenha" required placeholder="*******" min="6" max="12" autocomplete="new-password" />
+                        </p>
+                        <p>
+                            <label for="isenhaconf">Confirmar Senha: </label>
+                            <input type="password" name="senhaconf" id="isenhaconf" required placeholder="*******" min="6" max="12" autocomplete="new-password" />
+                        </p>
+                        <input type="submit" value="Cadastrar" />
+                        <input type="reset" value="Limpar" />
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <form action="redefinir.php" method="post">
+                    <fieldset>
+                        <legend>Redefina sua senha</legend>
+                        <p>
+                            <label for="imail">E-mail</label>
+                            <input type="email" name="email" id="imail" required placeholder="E-mail cadastrado" min="9" autocomplete="email" />
+                        </p>
+                        <input type="submit" value="Enviar">
+
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
